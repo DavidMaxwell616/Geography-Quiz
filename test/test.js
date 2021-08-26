@@ -1,8 +1,8 @@
 var config = {
   type: Phaser.AUTO,
   parent: 'phaser-test',
-  width: 1000,
-  height: 500,
+  width: 800,
+  height: 600,
   backgroundColor: '#001133',
   scene: {
     preload: preload,
@@ -12,6 +12,9 @@ var config = {
 const REGION = 'Africa';
 var countries = []
 var game = new Phaser.Game(config);
+var regionData;
+var countryData;
+var region;
 
 function preload() {
   // showLoader(this);
@@ -19,7 +22,8 @@ function preload() {
   this.load.image('background', '1.svg');
 
   this.load.path = '../assets/';
-  this.load.json('countryData', 'countryData.json');
+  this.load.json('countryData', 'json/countryData.json');
+  this.load.json('regionData', 'json/regionData.json');
   //this.load.image('maxxdaddy', 'maxxdaddy.gif');
   this.load.image('start', 'start.png');
   //this.load.image('dialog', 'dialog.png');
@@ -34,18 +38,18 @@ function drawCountries(game) {
  countries.forEach(country => {
 
   let url = '../assets/shapes/' + country.key + '.svg';
-
   game.scene.load.image(country.key, url);
   game.scene.load.once('complete', () => {
-    //var src = scene.textures.get(key).getSourceImage();
+  console.log(country.name,country.x,country.y);
+     //var src = scene.textures.get(key).getSourceImage();
 
     //var canvas = scene.textures.createCanvas('map_' + key, src.width, src.height).draw(0, 0, src);
     // var data = canvas.imageData;
     // console.log(data);
     // var img = new Image();
     // img.src = data;
-   game.scene.add.image(country.x, country.y, country.key);
-    // canvas.refresh();
+   var img = game.scene.add.image(country.x-region.centerX, country.y-region.centerY, country.key);
+   // canvas.refresh();
 
     // var pixel = new Phaser.Display.Color();
     // var xOffset = country.x;
@@ -61,17 +65,13 @@ function drawCountries(game) {
 
   game.scene.load.start(); // start loading
 });
-
-
 }
 
-
-
-
 function create() {
-
 countryData = this.cache.json.get('countryData');
+regionData = this.cache.json.get('regionData');
 countries = countryData.filter(word => word.region == REGION);
+region = regionData.filter(word => word.region == REGION)[0];
 
 start = this.add
     .image(
@@ -88,6 +88,7 @@ start = this.add
 function onObjectClicked(pointer, gameObject) {
   if (gameObject.name == 'start') {
     drawCountries(this);
+    start.visible = false;
   }
 }
 

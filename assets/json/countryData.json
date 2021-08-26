@@ -1,6 +1,6 @@
 [{
     "key": 10,
-    "country": "Alaska",
+    "name": "Alaska",
     "region": "North America",
     "width": 104,
     "height": 72,
@@ -9,7 +9,7 @@
   },
   {
     "key": 6,
-    "country": "Canada",
+    "name": "Canada",
     "region": "North America",
     "width": 236,
     "height": 173,
@@ -17,7 +17,7 @@
     "y": "0"
   }, {
     "key": 4,
-    "country": "USA",
+    "name": "USA",
     "region": "North America",
     "width": 156,
     "height": 74,
@@ -25,7 +25,7 @@
     "y": "152"
   }, {
     "key": 8,
-    "country": "Greenland",
+    "name": "Greenland",
     "region": "North America",
     "width": 160,
     "height": 110,
@@ -33,7 +33,7 @@
     "y": "0"
   }, {
     "key": 12,
-    "country": "Mexico",
+    "name": "Mexico",
     "region": "North America",
     "width": 81,
     "height": 46,
@@ -41,7 +41,7 @@
     "y": "205"
   }, {
     "key": 14,
-    "country": "Cuba",
+    "name": "Cuba",
     "region": "Carribbean",
     "width": 21,
     "height": 9,
@@ -49,7 +49,7 @@
     "y": "231"
   }, {
     "key": 16,
-    "country": "Dominican Republic",
+    "name": "Dominican Republic",
     "region": "Carribbean",
     "width": 5,
     "height": 3,
@@ -57,7 +57,7 @@
     "y": "241"
   }, {
     "key": 106,
-    "country": "Iceland",
+    "name": "Iceland",
     "region": "Europe",
     "width": 25,
     "height": 11,
@@ -65,7 +65,7 @@
     "y": "87"
   }, {
     "key": 238,
-    "country": "Guatemala",
+    "name": "Guatemala",
     "region": "Central America",
     "width": 7,
     "height": 9,
@@ -73,7 +73,7 @@
     "y": "247"
   }, {
     "key": 276,
-    "country": "Haiti",
+    "name": "Haiti",
     "region": "Carribbean",
     "width": 9,
     "height": 5,
@@ -81,7 +81,7 @@
     "y": "240"
   }, {
     "key": 278,
-    "country": "Jamaica",
+    "name": "Jamaica",
     "region": "Carribbean",
     "width": 4,
     "height": 3,
@@ -89,7 +89,7 @@
     "y": "244"
   }, {
     "key": 264,
-    "country": "Nicaragua",
+    "name": "Nicaragua",
     "region": "Central America",
     "width": 9,
     "height": 9,
@@ -97,7 +97,7 @@
     "y": "255"
   }, {
     "key": 282,
-    "country": "Honduras",
+    "name": "Honduras",
     "region": "Central America",
     "width": 11,
     "height": 12,
@@ -105,7 +105,7 @@
     "y": "251"
   }, {
     "key": 242,
-    "country": "Panama",
+    "name": "Panama",
     "region": "Central America",
     "width": 11,
     "height": 3,
@@ -113,7 +113,7 @@
     "y": "269"
   }, {
     "key": 272,
-    "country": "Costa Rica",
+    "name": "Costa Rica",
     "region": "Central America",
     "width": 4,
     "height": 4,
@@ -121,7 +121,7 @@
     "y": "265"
   }, {
     "key": 280,
-    "country": "Puerto Rico",
+    "name": "Puerto Rico",
     "region": "Carribbean",
     "width": 1,
     "height": 2,
@@ -129,7 +129,7 @@
     "y": "243"
   }, {
     "key": 244,
-    "country": "Venezuela",
+    "name": "Venezuela",
     "region": "South America",
     "width": 32,
     "height": 27,
@@ -137,7 +137,7 @@
     "y": "264"
   }, {
     "key": 242,
-    "country": "Colombia",
+    "name": "Colombia",
     "region": "South America",
     "width": 29,
     "height": 36,
@@ -145,7 +145,7 @@
     "y": "264"
   }, {
     "key": 246,
-    "country": "Guyana",
+    "name": "Guyana",
     "region": "South America",
     "width": 10,
     "height": 16,
@@ -153,7 +153,7 @@
     "y": "273"
   }, {
     "key": 248,
-    "country": "Suriname",
+    "name": "Suriname",
     "region": "South America",
     "width": 9,
     "height": 8,
@@ -161,7 +161,7 @@
     "y": "278"
   }, {
     "key": 250,
-    "country": "French Guyana",
+    "name": "French Guyana",
     "region": "South America",
     "width": 6,
     "height": 4,
@@ -169,7 +169,7 @@
     "y": "281"
   }, {
     "key": 186,
-    "country": "Brazil",
+    "name": "Brazil",
     "region": "South America",
     "width": 107,
     "height": 105,
@@ -177,7 +177,7 @@
     "y": "280"
   }, {
     "key": 256,
-    "country": "Bolivia",
+    "name": "Bolivia",
     "region": "South America",
     "width": 30,
     "height": 34,
@@ -185,7 +185,7 @@
     "y": "320"
   }, {
     "key": 262,
-    "country": "Argentina",
+    "name": "Argentina",
     "region": "South America",
     "width": 47,
     "height": 91,
@@ -193,7 +193,7 @@
     "y": "353"
   }, {
     "key": 254,
-    "country": "Peru",
+    "name": "Peru",
     "region": "South America",
     "width": 33,
     "height": 47,
@@ -201,7 +201,7 @@
     "y": "295"
   }, {
     "key": 264,
-    "country": "Uraguay",
+    "name": "Uraguay",
     "region": "South America",
     "width": 14,
     "height": 13,
@@ -209,7 +209,7 @@
     "y": "376"
   }, {
     "key": 258,
-    "country": "Paraguay",
+    "name": "Paraguay",
     "region": "South America",
     "width": 21,
     "height": 21,
@@ -217,7 +217,7 @@
     "y": "346"
   }, {
     "key": 260,
-    "country": "Chile",
+    "name": "Chile",
     "region": "South America",
     "width": 17,
     "height": 67,
@@ -225,7 +225,7 @@
     "y": "342"
   }, {
     "key": 252,
-    "country": "Ecuador",
+    "name": "Ecuador",
     "region": "South America",
     "width": 16,
     "height": 16,
@@ -233,7 +233,7 @@
     "y": "290"
   }, {
     "key": 236,
-    "country": "Russia",
+    "name": "Russia",
     "region": "North Asia",
     "width": 434,
     "height": 147,
@@ -241,7 +241,7 @@
     "y": "30"
   }, {
     "key": 200,
-    "country": "Kazakhstan",
+    "name": "Kazakhstan",
     "region": "Central Asia",
     "width": 107,
     "height": 48,
@@ -249,7 +249,7 @@
     "y": "131"
   }, {
     "key": 116,
-    "country": "Norway",
+    "name": "Norway",
     "region": "Europe",
     "width": 61,
     "height": 53,
@@ -257,7 +257,7 @@
     "y": "66"
   }, {
     "key": 118,
-    "country": "Sweden",
+    "name": "Sweden",
     "region": "Europe",
     "width": 34,
     "height": 56,
@@ -265,7 +265,7 @@
     "y": "73"
   }, {
     "key": 102,
-    "country": "Great Britain",
+    "name": "Great Britain",
     "region": "Europe",
     "width": 26,
     "height": 30,
@@ -273,7 +273,7 @@
     "y": "118"
   }, {
     "key": 104,
-    "country": "Ireland",
+    "name": "Ireland",
     "region": "Europe",
     "width": 10.25,
     "height": 10,
@@ -281,7 +281,7 @@
     "y": "134"
   }, {
     "key": 120,
-    "country": "Finland",
+    "name": "Finland",
     "region": "Europe",
     "width": 24,
     "height": 42,
@@ -289,7 +289,7 @@
     "y": "70"
   }, {
     "key": 114,
-    "country": "France",
+    "name": "France",
     "region": "Europe",
     "width": 32,
     "height": 27,
@@ -297,7 +297,7 @@
     "y": "147"
   }, {
     "key": 108,
-    "country": "Spain",
+    "name": "Spain",
     "region": "Europe",
     "width": 32,
     "height": 23,
@@ -305,7 +305,7 @@
     "y": "170"
   }, {
     "key": 110,
-    "country": "Portugal",
+    "name": "Portugal",
     "region": "Europe",
     "width": 9,
     "height": 16,
@@ -313,7 +313,7 @@
     "y": "175"
   }, {
     "key": 112,
-    "country": "Italy",
+    "name": "Italy",
     "region": "Europe",
     "width": 30,
     "height": 31,
@@ -321,7 +321,7 @@
     "y": "160"
   }, {
     "key": 2,
-    "country": "Switzerland",
+    "name": "Switzerland",
     "region": "Europe",
     "width": 8,
     "height": 6,
@@ -329,7 +329,7 @@
     "y": "157"
   }, {
     "key": 136,
-    "country": "Luxembourg",
+    "name": "Luxembourg",
     "region": "Europe",
     "width": 2,
     "height": 3,
@@ -337,7 +337,7 @@
     "y": "148"
   }, {
     "key": 126,
-    "country": "Germany",
+    "name": "Germany",
     "region": "Europe",
     "width": 23,
     "height": 27,
@@ -345,7 +345,7 @@
     "y": "132"
   }, {
     "key": 152,
-    "country": "Macedonia",
+    "name": "Macedonia",
     "region": "Europe",
     "width": 2,
     "height": 2,
@@ -353,7 +353,7 @@
     "y": "175"
   }, {
     "key": 134,
-    "country": "Austria",
+    "name": "Austria",
     "region": "Europe",
     "width": 11,
     "height": 7,
@@ -361,7 +361,7 @@
     "y": "153"
   }, {
     "key": 130,
-    "country": "Poland",
+    "name": "Poland",
     "region": "Europe",
     "width": 25,
     "height": 20,
@@ -369,7 +369,7 @@
     "y": "133"
   }, {
     "key": 124,
-    "country": "Netherlands",
+    "name": "Netherlands",
     "region": "Europe",
     "width": 7,
     "height": 7,
@@ -377,7 +377,7 @@
     "y": "138"
   }, {
     "key": 122,
-    "country": "Denmark",
+    "name": "Denmark",
     "region": "Europe",
     "width": 9,
     "height": 7,
@@ -385,7 +385,7 @@
     "y": "124"
   }, {
     "key": 138,
-    "country": "Slovakia",
+    "name": "Slovakia",
     "region": "Europe",
     "width": 8,
     "height": 4,
@@ -393,7 +393,7 @@
     "y": "152"
   }, {
     "key": 140,
-    "country": "Hungary",
+    "name": "Hungary",
     "region": "Europe",
     "width": 14,
     "height": 7,
@@ -401,7 +401,7 @@
     "y": "155"
   }, {
     "key": 142,
-    "country": "Romania",
+    "name": "Romania",
     "region": "Europe",
     "width": 21,
     "height": 15,
@@ -409,7 +409,7 @@
     "y": "156"
   }, {
     "key": 144,
-    "country": "Bulgaria",
+    "name": "Bulgaria",
     "region": "Europe",
     "width": 14,
     "height": 6,
@@ -417,7 +417,7 @@
     "y": "171"
   }, {
     "key": 156,
-    "country": "Croatia",
+    "name": "Croatia",
     "region": "Europe",
     "width": 7,
     "height": 7,
@@ -425,7 +425,7 @@
     "y": "166"
   }, {
     "key": 150,
-    "country": "Albania",
+    "name": "Albania",
     "region": "Europe",
     "width": 3,
     "height": 8,
@@ -433,7 +433,7 @@
     "y": "174"
   }, {
     "key": 148,
-    "country": "Greece",
+    "name": "Greece",
     "region": "Europe",
     "width": 9,
     "height": 14,
@@ -441,7 +441,7 @@
     "y": "177"
   }, {
     "key": 154,
-    "country": "Bosnia",
+    "name": "Bosnia",
     "region": "Europe",
     "width": 11,
     "height": 13,
@@ -449,7 +449,7 @@
     "y": "162"
   }, {
     "key": 158,
-    "country": "Slovenia",
+    "name": "Slovenia",
     "region": "Europe",
     "width": 8,
     "height": 6,
@@ -457,7 +457,7 @@
     "y": "160"
   }, {
     "key": 132,
-    "country": "Czech Republic",
+    "name": "Czech Republic",
     "region": "Europe",
     "width": 16,
     "height": 8,
@@ -465,7 +465,7 @@
     "y": "146"
   }, {
     "key": 160,
-    "country": "Ukraine",
+    "name": "Ukraine",
     "region": "Europe",
     "width": 47,
     "height": 26,
@@ -473,7 +473,7 @@
     "y": "141"
   }, {
     "key": 162,
-    "country": "Belarus",
+    "name": "Belarus",
     "region": "Europe",
     "width": 21,
     "height": 16,
@@ -481,7 +481,7 @@
     "y": "128"
   }, {
     "key": 164,
-    "country": "Lithuania",
+    "name": "Lithuania",
     "region": "Europe",
     "width": 12,
     "height": 8,
@@ -489,7 +489,7 @@
     "y": "127"
   }, {
     "key": 166,
-    "country": "Latvia",
+    "name": "Latvia",
     "region": "Europe",
     "width": 17,
     "height": 6,
@@ -497,7 +497,7 @@
     "y": "121"
   }, {
     "key": 146,
-    "country": "Turkey",
+    "name": "Turkey",
     "region": "West Asia",
     "width": 49,
     "height": 19,
@@ -505,7 +505,7 @@
     "y": "175"
   }, {
     "key": 172,
-    "country": "Syria",
+    "name": "Syria",
     "region": "West Asia",
     "width": 13,
     "height": 12,
@@ -513,7 +513,7 @@
     "y": "192"
   }, {
     "key": 176,
-    "country": "Israel",
+    "name": "Israel",
     "region": "West Asia",
     "width": 3,
     "height": 10,
@@ -521,7 +521,7 @@
     "y": "202"
   }, {
     "key": 174,
-    "country": "Jordan",
+    "name": "Jordan",
     "region": "West Asia",
     "width": 9,
     "height": 10,
@@ -529,7 +529,7 @@
     "y": "203"
   }, {
     "key": 282,
-    "country": "Iraq",
+    "name": "Iraq",
     "region": "West Asia",
     "width": 26,
     "height": 24,
@@ -537,7 +537,7 @@
     "y": "190"
   }, {
     "key": 282,
-    "country": "Azerbaijan",
+    "name": "Azerbaijan",
     "region": "West Asia",
     "width": 11,
     "height": 10,
@@ -545,7 +545,7 @@
     "y": "176"
   }, {
     "key": 26,
-    "country": "Egypt",
+    "name": "Egypt",
     "region": "West Asia",
     "width": 28,
     "height": 26,
@@ -553,7 +553,7 @@
     "y": "208"
   }, {
     "key": 24,
-    "country": "Libya",
+    "name": "Libya",
     "region": "West Asia",
     "width": 43,
     "height": 38,
@@ -561,7 +561,7 @@
     "y": "203"
   }, {
     "key": 20,
-    "country": "Algeria",
+    "name": "Algeria",
     "region": "Africa",
     "width": 54,
     "height": 50,
@@ -569,7 +569,7 @@
     "y": "192"
   }, {
     "key": 18,
-    "country": "Morocco",
+    "name": "Morocco",
     "region": "Africa",
     "width": 42,
     "height": 40,
@@ -577,7 +577,7 @@
     "y": "196"
   }, {
     "key": 22,
-    "country": "Tunisia",
+    "name": "Tunisia",
     "region": "Africa",
     "width": 9,
     "height": 20,
@@ -585,7 +585,7 @@
     "y": "190"
   }, {
     "key": 40,
-    "country": "Mauritania",
+    "name": "Mauritania",
     "region": "Africa",
    "width": 30,
     "height": 32,
@@ -593,7 +593,7 @@
     "y": "221"
   }, {
     "key": 178,
-    "country": "Saudi Arabia",
+    "name": "Saudi Arabia",
     "region": "West Asia",
    "width": 56,
     "height": 42,
@@ -601,7 +601,7 @@
     "y": "207"
   }, {
     "key": 284,
-    "country": "Yemen",
+    "name": "Yemen",
     "region": "West Asia",
     "width": 26,
     "height": 15,
@@ -610,7 +610,7 @@
   },
   {
     "key": 180,
-    "country": "Oman",
+    "name": "Oman",
     "region": "Africa",
     "width": 19,
     "height": 21,
@@ -618,7 +618,7 @@
     "y": "244"
   }, {
     "key": 294,
-    "country": "Eritrea",
+    "name": "Eritrea",
     "region": "Africa",
     "width": 16,
     "height": 13,
@@ -626,15 +626,15 @@
     "y": "247"
   }, {
     "key": 28,
-    "country": "Sudan",
+    "name": "Sudan",
     "region": "Africa",
     "width": 100,
     "height": 100,
-    "x": "44",
-    "y": "52"
+    "x": "544",
+    "y": "152"
   }, {
     "key": 32,
-    "country": "Ethiopia",
+    "name": "Ethiopia",
     "region": "Africa",
     "width": 36,
     "height": 28,
@@ -642,7 +642,7 @@
     "y": "255"
   }, {
     "key": 30,
-    "country": "Somali Republic",
+    "name": "Somali Republic",
     "region": "Africa",
     "width": 27,
     "height": 35,
@@ -650,7 +650,7 @@
     "y": "262"
   }, {
     "key": 48,
-    "country": "Senegal",
+    "name": "Senegal",
     "region": "Africa",
     "width": 15,
     "height": 10,
@@ -658,7 +658,7 @@
     "y": "250"
   }, {
     "key": 292,
-    "country": "Guinea Bissau",
+    "name": "Guinea Bissau",
     "region": "Africa",
     "width": 5,
     "height": 4,
@@ -666,7 +666,7 @@
     "y": "260"
   }, {
     "key": 50,
-    "country": "Guinea",
+    "name": "Guinea",
     "region": "Africa",
     "width": 17,
     "height": 13,
@@ -674,7 +674,7 @@
     "y": "260"
   }, {
     "key": 54,
-    "country": "Liberia",
+    "name": "Liberia",
     "region": "Africa",
     "width": 9,
     "height": 8,
@@ -682,7 +682,7 @@
     "y": "272"
   }, {
     "key": 56,
-    "country": "Ivory Coast",
+    "name": "Ivory Coast",
     "region": "Africa",
     "width": 14,
     "height": 13,
@@ -690,7 +690,7 @@
     "y": "267"
   }, {
     "key": 52,
-    "country": "Sierra Leone",
+    "name": "Sierra Leone",
     "region": "Africa",
     "width": 7,
     "height": 8,
@@ -698,7 +698,7 @@
     "y": "267"
   }, {
     "key": 58,
-    "country": "Ghana",
+    "name": "Ghana",
     "region": "Africa",
     "width": 7,
     "height": 15,
@@ -706,7 +706,7 @@
     "y": "265"
   }, {
     "key": 100,
-    "country": "Burkina Faso",
+    "name": "Burkina Faso",
     "region": "Africa",
     "width": 20,
     "height": 14,
@@ -714,7 +714,7 @@
     "y": "253"
   }, {
     "key": 294,
-    "country": "Togo",
+    "name": "Togo",
     "region": "Africa",
     "width": 5,
     "height": 8,
@@ -722,7 +722,7 @@
     "y": "271"
   }, {
     "key": 60,
-    "country": "Benin",
+    "name": "Benin",
     "region": "Africa",
     "width": 6,
     "height": 15,
@@ -730,7 +730,7 @@
     "y": "262"
   }, {
     "key": 62,
-    "country": "Nigeria",
+    "name": "Nigeria",
     "region": "Africa",
     "width": 30,
     "height": 23,
@@ -738,7 +738,7 @@
     "y": "258"
   }, {
     "key": 44,
-    "country": "Niger",
+    "name": "Niger",
     "region": "Africa",
     "width": 41,
     "height": 29,
@@ -746,7 +746,7 @@
     "y": "231"
   }, {
     "key": 42,
-    "country": "Mali",
+    "name": "Mali",
     "region": "Africa",
     "width": 44,
     "height": 38,
@@ -754,7 +754,7 @@
     "y": "227"
   }, {
     "key": 46,
-    "country": "Chad",
+    "name": "Chad",
     "region": "Africa",
     "width": 27,
     "height": 42,
@@ -762,7 +762,7 @@
     "y": "231"
   }, {
     "key": 66,
-    "country": "Central African Republic",
+    "name": "Central African Republic",
     "region": "Africa",
     "width": 32,
     "height": 20,
@@ -770,7 +770,7 @@
     "y": "265"
   }, {
     "key": 64,
-    "country": "Cameroon",
+    "name": "Cameroon",
     "region": "Africa",
     "width": 19,
     "height": 20,
@@ -778,7 +778,7 @@
     "y": "268"
   }, {
     "key": 72,
-    "country": "Equitorial Guinea",
+    "name": "Equitorial Guinea",
     "region": "Africa",
     "width": 5,
     "height": 4,
@@ -786,7 +786,7 @@
     "y": "287"
   }, {
     "key": 70,
-    "country": "Gabon",
+    "name": "Gabon",
     "region": "Africa",
     "width": 13,
     "height": 14,
@@ -794,7 +794,7 @@
     "y": "288"
   }, {
     "key": 90,
-    "country": "Congo",
+    "name": "Congo",
     "region": "Africa",
     "width": 17,
     "height": 21,
@@ -802,7 +802,7 @@
     "y": "284"
   }, {
     "key": 68,
-    "country": "Democratic Republic of Congo",
+    "name": "Democratic Republic of Congo",
     "region": "Africa",
     "width": 51,
     "height": 47,
@@ -810,7 +810,7 @@
     "y": "279"
   }, {
     "key": 36,
-    "country": "Uganda",
+    "name": "Uganda",
     "region": "Africa",
     "width": 13,
     "height": 12,
@@ -818,7 +818,7 @@
     "y": "284"
   }, {
     "key": 34,
-    "country": "Kenya",
+    "name": "Kenya",
     "region": "Africa",
     "width": 19,
     "height": 22,
@@ -826,7 +826,7 @@
     "y": "282"
   }, {
     "key": 38,
-    "country": "Tanzania",
+    "name": "Tanzania",
     "region": "Africa",
     "width": 31,
     "height": 27,
@@ -834,7 +834,7 @@
     "y": "297"
   }, {
     "key": 74,
-    "country": "Angola",
+    "name": "Angola",
     "region": "Africa",
     "width": 32,
     "height": 31,
@@ -842,7 +842,7 @@
     "y": "309"
   }, {
     "key": 86,
-    "country": "Zambia",
+    "name": "Zambia",
     "region": "Africa",
     "width": 30,
     "height": 24,
@@ -850,7 +850,7 @@
     "y": "316"
   }, {
     "key": 82,
-    "country": "Zimbabwe",
+    "name": "Zimbabwe",
     "region": "Africa",
     "width": 20,
     "height": 17,
@@ -858,7 +858,7 @@
     "y": "336"
   }, {
     "key": 84,
-    "country": "Mozambique",
+    "name": "Mozambique",
     "region": "Africa",
     "width": 27,
     "height": 39,
@@ -866,7 +866,7 @@
     "y": "323"
   }, {
     "key": 92,
-    "country": "Madagascar",
+    "name": "Madagascar",
     "region": "Africa",
     "width": 18,
     "height": 35,
@@ -874,7 +874,7 @@
     "y": "327"
   }, {
     "key": 88,
-    "country": "Rwanda",
+    "name": "Rwanda",
     "region": "Africa",
     "width": 8,
     "height": 19,
@@ -882,7 +882,7 @@
     "y": "138"
   }, {
     "key": 80,
-    "country": "Botswana",
+    "name": "Botswana",
     "region": "Africa",
     "width": 24,
     "height": 23,
@@ -890,7 +890,7 @@
     "y": "342"
   }, {
     "key": 76,
-    "country": "Namibia",
+    "name": "Namibia",
     "region": "Africa",
     "width": 24,
     "height": 33,
@@ -898,7 +898,7 @@
     "y": "339"
   }, {
     "key": 78,
-    "country": "South Africa",
+    "name": "South Africa",
     "region": "Africa",
     "width": 41,
     "height": 36,
@@ -906,7 +906,7 @@
     "y": "353"
   }, {
     "key": 194,
-    "country": "China",
+    "name": "China",
     "region": "East Asia",
     "width": 166,
     "height": 102,
@@ -914,7 +914,7 @@
     "y": "137"
   }, {
     "key": 222,
-    "country": "North Korea",
+    "name": "North Korea",
     "region": "East Asia",
     "width": 14,
     "height": 14,
@@ -922,7 +922,7 @@
     "y": "174"
   }, {
     "key": 224,
-    "country": "South Korea",
+    "name": "South Korea",
     "region": "East Asia",
     "width": 7,
     "height": 11,
@@ -930,7 +930,7 @@
     "y": "187"
   }, {
     "key": 226,
-    "country": "Japan",
+    "name": "Japan",
     "region": "East Asia",
     "width": 30,
     "height": 26,
@@ -938,7 +938,7 @@
     "y": "179"
   }, {
     "key": 238,
-    "country": "Taiwan",
+    "name": "Taiwan",
     "region": "East Asia",
     "width": 100,
     "height": 100,
@@ -946,7 +946,7 @@
     "y": "6"
   }, {
     "key": 280,
-    "country": "Iraq",
+    "name": "Iraq",
     "region": "West Asia",
     "width": 26,
     "height": 24,
@@ -954,7 +954,7 @@
     "y": "190"
   }, {
     "key": 188,
-    "country": "Iran",
+    "name": "Iran",
     "region": "South Asia",
     "width": 50,
     "height": 41,
@@ -962,7 +962,7 @@
     "y": "184"
   }, {
     "key": 184,
-    "country": "Afghanistan",
+    "name": "Afghanistan",
     "region": "South Asia",
     "width": 29,
     "height": 25,
@@ -970,7 +970,7 @@
     "y": "188"
   }, {
     "key": 190,
-    "country": "Turkmenistan",
+    "name": "Turkmenistan",
     "region": "Central Asia",
     "width": 36,
     "height": 22,
@@ -978,7 +978,7 @@
     "y": "174"
   }, {
     "key": 192,
-    "country": "Uzbekistan",
+    "name": "Uzbekistan",
     "region": "Central Asia",
     "width": 33,
     "height": 24,
@@ -986,7 +986,7 @@
     "y": "165"
   }, {
     "key": 202,
-    "country": "Tajikistan",
+    "name": "Tajikistan",
     "region": "Central Asia",
     "width": 19,
     "height": 8,
@@ -994,7 +994,7 @@
     "y": "183"
   }, {
     "key": 198,
-    "country": "Kyrgyzstan",
+    "name": "Kyrgyzstan",
     "region": "Central Asia",
     "width": 21,
     "height": 13,
@@ -1002,7 +1002,7 @@
     "y": "171"
   }, {
     "key": 170,
-    "country": "Georgia",
+    "name": "Georgia",
     "region": "West Asia",
     "width": 12,
     "height": 6,
@@ -1011,7 +1011,7 @@
   },
   {
     "key": 96,
-    "country": "India",
+    "name": "India",
     "region": "South Asia",
     "width": 76,
     "height": 75,
@@ -1019,7 +1019,7 @@
     "y": "197"
   }, {
     "key": 196,
-    "country": "Nepal",
+    "name": "Nepal",
     "region": "South Asia",
     "width": 19,
     "height": 9,
@@ -1027,7 +1027,7 @@
     "y": "212"
   }, {
     "key": 228,
-    "country": "Mongolia",
+    "name": "Mongolia",
     "region": "East Asia",
     "width": 85,
     "height": 34,
@@ -1035,7 +1035,7 @@
     "y": "142"
   }, {
     "key": 182,
-    "country": "Pakistan",
+    "name": "Pakistan",
     "region": "South Asia",
     "width": 39,
     "height": 37,
@@ -1043,7 +1043,7 @@
     "y": "192"
   }, {
     "key": 206,
-    "country": "Bangladesh",
+    "name": "Bangladesh",
     "region": "South Asia",
     "width": 11,
     "height": 12,
@@ -1051,7 +1051,7 @@
     "y": "223"
   }, {
     "key": 208,
-    "country": "Myanmar",
+    "name": "Myanmar",
     "region": "Southeast Asia",
     "width": 20,
     "height": 33,
@@ -1059,7 +1059,7 @@
     "y": "218"
   }, {
     "key": 210,
-    "country": "Thailand",
+    "name": "Thailand",
     "region": "Southeast Asia",
     "width": 22,
     "height": 36,
@@ -1067,7 +1067,7 @@
     "y": "239"
   }, {
     "key": 218,
-    "country": "Malaysia",
+    "name": "Malaysia",
     "region": "Southeast Asia",
     "width": 51,
     "height": 15,
@@ -1075,7 +1075,7 @@
     "y": "276"
   }, {
     "key": 234,
-    "country": "Phillipines",
+    "name": "Phillipines",
     "region": "Southeast Asia",
     "width": 18,
     "height": 34,
@@ -1083,7 +1083,7 @@
     "y": "244"
   }, {
     "key": 216,
-    "country": "Cambodia",
+    "name": "Cambodia",
     "region": "Southeast Asia",
     "width": 15,
     "height": 11,
@@ -1091,7 +1091,7 @@
     "y": "255"
   }, {
     "key": 214,
-    "country": "Vietnam",
+    "name": "Vietnam",
     "region": "Southeast Asia",
     "width": 18,
     "height": 37,
@@ -1099,7 +1099,7 @@
     "y": "232"
   }, {
     "key": 212,
-    "country": "Laos",
+    "name": "Laos",
     "region": "Southeast Asia",
     "width": 18,
     "height": 19,
@@ -1107,7 +1107,7 @@
     "y": "235"
   }, {
     "key": 220,
-    "country": "Indonesia",
+    "name": "Indonesia",
     "region": "Southeast Asia",
     "width": 122,
     "height": 35,
@@ -1115,7 +1115,7 @@
     "y": "280"
   }, {
     "key": 230,
-    "country": "New Guinea",
+    "name": "New Guinea",
     "region": "Pacific",
     "width": 23,
     "height": 19,
@@ -1123,7 +1123,7 @@
     "y": "300"
   }, {
     "key": 94,
-    "country": "Australia",
+    "name": "Australia",
     "region": "Pacific",
     "width": 108,
     "height": 78,
@@ -1131,7 +1131,7 @@
     "y": "324"
   }, {
     "key": 98,
-    "country": "New Zealand",
+    "name": "New Zealand",
     "region": "Pacific",
     "width": 32,
     "height": 30,
