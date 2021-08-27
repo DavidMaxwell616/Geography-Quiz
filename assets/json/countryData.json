@@ -546,7 +546,7 @@
   }, {
     "key": 26,
     "name": "Egypt",
-    "region": "West Asia",
+    "region": "Africa",
     "width": 28,
     "height": 26,
     "x": "558",
@@ -611,7 +611,7 @@
   {
     "key": 180,
     "name": "Oman",
-    "region": "Africa",
+    "region": "West Asia",
     "width": 19,
     "height": 21,
     "x": "607",
