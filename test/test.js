@@ -3,7 +3,7 @@ var config = {
   parent: 'phaser-test',
   width: 800,
   height: 600,
-  backgroundColor: '#001133',
+  backgroundColor: '#5273AD',
   scene: {
     preload: preload,
     create: create,
@@ -15,32 +15,213 @@ var game = new Phaser.Game(config);
 var regionData;
 var countryData;
 var region;
+var loadingComplete;
+var countryImages;
+const countryArray = [1,
+  10,
+  100,
+  102,
+  104,
+  106,
+  108,
+  110,
+  112,
+  114,
+  116,
+  118,
+  12,
+  120,
+  122,
+  124,
+  126,
+  128,
+  130,
+  132,
+  134,
+  136,
+  138,
+  14,
+  140,
+  142,
+  144,
+  146,
+  148,
+  150,
+  152,
+  154,
+  156,
+  158,
+  16,
+  160,
+  162,
+  164,
+  166,
+  168,
+  170,
+  172,
+  174,
+  176,
+  178,
+  18,
+  180,
+  182,
+  184,
+  186,
+  188,
+  190,
+  192,
+  194,
+  196,
+  198,
+  2,
+  20,
+  200,
+  202,
+  204,
+  206,
+  208,
+  210,
+  212,
+  214,
+  216,
+  218,
+  22,
+  220,
+  222,
+  224,
+  226,
+  228,
+  230,
+  232,
+  234,
+  236,
+  238,
+  24,
+  240,
+  242,
+  244,
+  246,
+  248,
+  250,
+  252,
+  254,
+  256,
+  258,
+  26,
+  260,
+  262,
+  264,
+  266,
+  268,
+  270,
+  272,
+  274,
+  276,
+  278,
+  28,
+  280,
+  282,
+  284,
+  286,
+  288,
+  290,
+  292,
+  294,
+  296,
+  30,
+  300,
+  310,
+  311,
+  312,
+  313,
+  314,
+  315,
+  316,
+  317,
+  318,
+  319,
+  32,
+  321,
+  328,
+  34,
+  36,
+  38,
+  4,
+  40,
+  42,
+  44,
+  46,
+  48,
+  50,
+  52,
+  54,
+  56,
+  58,
+  6,
+  60,
+  62,
+  64,
+  66,
+  68,
+  70,
+  72,
+  74,
+  76,
+  78,
+  8,
+  80,
+  82,
+  84,
+  86,
+  88,
+  90,
+  92,
+  94,
+  96,
+  98
+  ];
 
 function preload() {
-  // showLoader(this);
+  loadingComplete = false;
+  showLoader(this);
   this.load.path = '../assets/shapes/';
-  this.load.image('background', '1.svg');
-
+  
   this.load.path = '../assets/';
   this.load.json('countryData', 'json/countryData.json');
   this.load.json('regionData', 'json/regionData.json');
-  //this.load.image('maxxdaddy', 'maxxdaddy.gif');
-  this.load.image('start', 'start.png');
-  //this.load.image('dialog', 'dialog.png');
-
-  this.scale.pageAlignHorizontally = true;
-  this.scale.pageAlignVertically = true;
-  this.scale.refresh();
+  this.load.image('maxxdaddy', 'maxxdaddy.gif');
+   // this.scale.pageAlignHorizontally = true;
+  // this.scale.pageAlignVertically = true;
+  // this.scale.refresh();
+  countryArray.forEach(country => {
+    this.load.svg(country, 'shapes/'+country+'.svg', { scale: 3 });
+  });
+  
 }
 
 function drawCountries(game) {
- 
- countries.forEach(country => {
-
-  let url = '../assets/shapes/' + country.key + '.svg';
-  game.scene.load.image(country.key, url);
-  game.scene.load.once('complete', () => {
-  console.log(country.name,country.x,country.y);
+  //countries.forEach(country => {
+ var country = countries[0];
+ console.log(country.x+region.centerX,country.y+region.centerY);
+  var countryImage = game.scene.add.image(country.x+region.centerX, country.y+region.centerY, country.key).setOrigin(0.5);
+    countryImage.name = country.key;
+    countryImage.setInteractive();
+    game.scene.input.on('gameobjectdown', onObjectClicked);
+   
+    countryImages.add(countryImage);
+   game.scene.make.text({
+    x: country.x,
+    y: country.y,
+    text: country.name,
+    style: {
+      font: '18px monospace',
+      fill: '#ffffff'
+    }
+  //});
+  //let url = '../assets/shapes/' + country.key + '.svg';
+  //game.scene.load.image(country.key, url, { scale: 2 });
+  //game.scene.load.once('complete', () => {
+  //console.log(country.name,country.x,country.y);
      //var src = scene.textures.get(key).getSourceImage();
 
     //var canvas = scene.textures.createCanvas('map_' + key, src.width, src.height).draw(0, 0, src);
@@ -48,7 +229,7 @@ function drawCountries(game) {
     // console.log(data);
     // var img = new Image();
     // img.src = data;
-   var img = game.scene.add.image(country.x-region.centerX, country.y-region.centerY, country.key);
+  // var img = game.scene.add.image(country.x-region.centerX, country.y-region.centerY, country.key).setScale(3).setOrigin(0);;
    // canvas.refresh();
 
     // var pixel = new Phaser.Display.Color();
@@ -61,25 +242,27 @@ function drawCountries(game) {
     //     }
     //   }
     // }
-  });
+ // });
 
-  game.scene.load.start(); // start loading
 });
 }
 
 function create() {
-countryData = this.cache.json.get('countryData');
-regionData = this.cache.json.get('regionData');
+  countryData = this.cache.json.get('countryData');
+    regionData = this.cache.json.get('regionData');
 countries = countryData.filter(word => word.region == REGION);
 region = regionData.filter(word => word.region == REGION)[0];
+countryImages = this.add.group();
+start = this.make.text({
+      x: this.game.config.width / 3,
+      y: this.game.config.height /2.5,
+      text: 'START!',
+      style: {
+        font: '80px IMPACT',
+        fill: '#FFA500'
+      }
+     });
 
-start = this.add
-    .image(
-      this.game.config.width / 2 + 40,
-      this.game.config.height * 0.92,
-      'start',
-    )
-    .setOrigin(0, 0);
   start.name = 'start';
   start.setInteractive();
   this.input.on('gameobjectdown', onObjectClicked);
@@ -89,6 +272,11 @@ function onObjectClicked(pointer, gameObject) {
   if (gameObject.name == 'start') {
     drawCountries(this);
     start.visible = false;
+  }
+  else
+  {
+    console.log(gameObject.name);
+    gameObject.destroy();
   }
 }
 
