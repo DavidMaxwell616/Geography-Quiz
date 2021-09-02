@@ -17,6 +17,8 @@ var countryData;
 var region;
 var loadingComplete;
 var countryImages;
+var countryText;
+
 const countryArray = [1,
   10,
   100,
@@ -199,25 +201,43 @@ function preload() {
   
 }
 
-function drawCountries(game) {
-  //countries.forEach(country => {
- var country = countries[0];
- console.log(country.x+region.centerX,country.y+region.centerY);
-  var countryImage = game.scene.add.image(country.x+region.centerX, country.y+region.centerY, country.key).setOrigin(0.5);
+function setCountryLocation(country){
+//get size
+
+}
+
+function drawCountry(game,country) {
+//  countries.forEach(country => {
+ var x = country.x+region.centerX;
+ var y = country.y+region.centerY;
+
+  var countryImage = game.scene.add.image(x,y, country.key).setOrigin(0.5);
     countryImage.name = country.key;
-    countryImage.setInteractive();
-    game.scene.input.on('gameobjectdown', onObjectClicked);
-   
+     countryImage.setInteractive({ draggable: true })
+    .on('drag', function(pointer, dragX, dragY){
+    countryImage.setPosition(dragX, dragY);
+        var text = countryText;
+        //var gameObjects = countryText.getMatching(countryImage.countryID, country.name)[0];
+      //  console.log(countryText);
+    })
+    .on('dragend', function(pointer, dragX, dragY, dropped){
+      country.x = countryImage.x;
+      country.y = countryImage.y;
+      let children = countryText.getChildren();
+    let child = children.filter(e => e.countryID === country.name)[0];
+     child.x = country.x;
+     child.y = country.y;
+    })
     countryImages.add(countryImage);
-   game.scene.make.text({
-    x: country.x,
-    y: country.y,
+   var text = game.scene.make.text({
+    x: x-country.name.length*3,
+    y: y,
     text: country.name,
     style: {
       font: '18px monospace',
-      fill: '#ffffff'
+      fill: '#000000'
     }
-  //});
+ //   });
   //let url = '../assets/shapes/' + country.key + '.svg';
   //game.scene.load.image(country.key, url, { scale: 2 });
   //game.scene.load.once('complete', () => {
@@ -245,23 +265,26 @@ function drawCountries(game) {
  // });
 
 });
+text.countryID = country.name;
+countryText.add(text);
 }
 
 function create() {
   countryData = this.cache.json.get('countryData');
-    regionData = this.cache.json.get('regionData');
-countries = countryData.filter(word => word.region == REGION);
-region = regionData.filter(word => word.region == REGION)[0];
-countryImages = this.add.group();
-start = this.make.text({
-      x: this.game.config.width / 3,
-      y: this.game.config.height /2.5,
-      text: 'START!',
-      style: {
-        font: '80px IMPACT',
-        fill: '#FFA500'
-      }
-     });
+  regionData = this.cache.json.get('regionData');
+  countries = countryData.filter(word => word.region == REGION);
+  region = regionData.filter(word => word.region == REGION)[0];
+  countryImages = this.add.group();
+  countryText = this.add.group();
+  start = this.make.text({
+        x: this.game.config.width / 3,
+        y: this.game.config.height /2.5,
+        text: 'START!',
+        style: {
+          font: '80px IMPACT',
+          fill: '#FFA500'
+        }
+      });
 
   start.name = 'start';
   start.setInteractive();
@@ -270,21 +293,20 @@ start = this.make.text({
 
 function onObjectClicked(pointer, gameObject) {
   if (gameObject.name == 'start') {
-    drawCountries(this);
-    start.visible = false;
-  }
-  else
-  {
-    console.log(gameObject.name);
-    gameObject.destroy();
+      countries.forEach(country => {
+      drawCountry(this,country);
+    });
+   start.visible = false;
   }
 }
 
 function showLoader(game) {
   var progressBar = game.add.graphics();
   var progressBox = game.add.graphics();
+  var width = game.cameras.main.width;
+  var height = game.cameras.main.height;
   progressBox.fillStyle(0x222222, 0.8);
-  progressBox.fillRect(340, 270, 320, 50);
+  progressBox.fillRect(width/3, 270, 320, 50);
   game.load.on('progress', function (value) {});
 
   game.load.on('fileprogress', function (file) {});
@@ -297,14 +319,12 @@ function showLoader(game) {
   });
   game.load.on('progress', function (value) {
     progressBar.clear();
-    progressBar.fillStyle(0xff4500, 1);
-    progressBar.fillRect(350, 280, 300 * value, 30);
+    progressBar.fillStyle(0xffff00, 1);
+    progressBar.fillRect(width/3+10, 280, 300 * value, 30);
     percentText.setText(parseInt(value * 100) + '%');
   });
 
-  var width = game.cameras.main.width;
-  var height = game.cameras.main.height;
-  var loadingText = game.make.text({
+   var loadingText = game.make.text({
     x: width / 2,
     y: height / 2 - 50,
     text: 'Loading...',
@@ -316,7 +336,7 @@ function showLoader(game) {
   loadingText.setOrigin(0.5, 0.5);
 
   var percentText = game.make.text({
-    x: width / 2,
+    x: width/3.5,
     y: height / 2 - 5,
     text: '0%',
     style: {
