@@ -549,48 +549,48 @@
     "region": "Africa",
     "width": 28,
     "height": 26,
-    "x": 544,
-    "y": 208
+    "x": 332,
+    "y": 171
   }, {
     "key": 24,
     "name": "Libya",
-    "region": "West Asia",
+    "region": "Africa",
     "width": 43,
     "height": 38,
-    "x": 515,
-    "y": 203
+    "x": 242,
+    "y": 173
   }, {
     "key": 20,
     "name": "Algeria",
     "region": "Africa",
     "width": 54,
     "height": 50,
-    "x": 467,
-    "y": 192
+    "x": 139,
+    "y": 162
   }, {
     "key": 18,
     "name": "Morocco",
     "region": "Africa",
     "width": 42,
-    "height": 40,
-    "x": 444,
-    "y": 196
+    "height": 159,
+    "x": 65,
+    "y": 159
   }, {
     "key": 22,
     "name": "Tunisia",
     "region": "Africa",
     "width": 9,
     "height": 20,
-    "x": 511,
-    "y": 190
+    "x": 190,
+    "y": 119
   }, {
     "key": 40,
     "name": "Mauritania",
     "region": "Africa",
    "width": 30,
     "height": 32,
-    "x": 445,
-    "y": 221
+    "x": 50,
+    "y": 210
   }, {
     "key": 178,
     "name": "Saudi Arabia",
@@ -622,288 +622,288 @@
     "region": "Africa",
     "width": 16,
     "height": 13,
-    "x": 590,
-    "y": 247
+    "x": 393,
+    "y": 253
   }, {
     "key": 28,
     "name": "Sudan",
     "region": "Africa",
     "width": 100,
     "height": 100,
-    "x": 544,
-    "y": 152
+    "x": 330,
+    "y": 262
   }, {
     "key": 32,
     "name": "Ethiopia",
     "region": "Africa",
     "width": 36,
     "height": 28,
-    "x": 582,
-    "y": 255
+    "x": 397,
+    "y": 290
   }, {
     "key": 30,
     "name": "Somali Republic",
     "region": "Africa",
     "width": 27,
     "height": 35,
-    "x": 602,
-    "y": 262
+    "x": 437,
+    "y": 317
   }, {
     "key": 48,
     "name": "Senegal",
     "region": "Africa",
     "width": 15,
     "height": 10,
-    "x": 443,
-    "y": 250
+    "x": 26,
+    "y": 255
   }, {
     "key": 292,
     "name": "Guinea Bissau",
     "region": "Africa",
     "width": 5,
     "height": 4,
-    "x": 445,
-    "y": 260
+    "x": 33,
+    "y": 287
   }, {
     "key": 50,
     "name": "Guinea",
     "region": "Africa",
     "width": 17,
     "height": 13,
-    "x": 450,
-    "y": 260
+    "x": 48,
+    "y": 286
   }, {
     "key": 54,
     "name": "Liberia",
     "region": "Africa",
     "width": 9,
     "height": 8,
-    "x": 460,
-    "y": 272
+    "x": 63,
+    "y": 307
   }, {
     "key": 56,
     "name": "Ivory Coast",
     "region": "Africa",
     "width": 14,
     "height": 13,
-    "x": 469,
-    "y": 267
+    "x": 93,
+    "y": 302
   }, {
     "key": 52,
     "name": "Sierra Leone",
     "region": "Africa",
     "width": 7,
     "height": 8,
-    "x": 455,
-    "y": 267
+    "x": 45,
+    "y": 293
   }, {
     "key": 58,
     "name": "Ghana",
     "region": "Africa",
     "width": 7,
     "height": 15,
-    "x": 483,
-    "y": 265
+    "x": 119,
+    "y": 301
   }, {
     "key": 100,
     "name": "Burkina Faso",
     "region": "Africa",
     "width": 20,
     "height": 14,
-    "x": 475,
-    "y": 253
+    "x": 114,
+    "y": 269
   }, {
     "key": 294,
     "name": "Togo",
     "region": "Africa",
     "width": 5,
     "height": 8,
-    "x": 488,
-    "y": 271
+    "x": 120,
+    "y": 315
   }, {
     "key": 60,
     "name": "Benin",
     "region": "Africa",
     "width": 6,
     "height": 15,
-    "x": 493,
-    "y": 262
+    "x": 140,
+    "y": 294
   }, {
     "key": 62,
     "name": "Nigeria",
     "region": "Africa",
     "width": 30,
     "height": 23,
-    "x": 498,
-    "y": 258
+    "x": 184,
+    "y": 293
   }, {
     "key": 44,
     "name": "Niger",
     "region": "Africa",
     "width": 41,
     "height": 29,
-    "x": 491,
-    "y": 231
+    "x": 181,
+    "y": 233
   }, {
     "key": 42,
     "name": "Mali",
     "region": "Africa",
     "width": 44,
     "height": 38,
-    "x": 458,
-    "y": 227
+    "x": 102,
+    "y": 231
   }, {
     "key": 46,
     "name": "Chad",
     "region": "Africa",
     "width": 27,
     "height": 42,
-    "x": 527,
-    "y": 231
+    "x": 251,
+    "y": 250
   }, {
     "key": 66,
     "name": "Central African Republic",
     "region": "Africa",
     "width": 32,
     "height": 20,
-    "x": 531,
-    "y": 265
+    "x": 268,
+    "y": 306
   }, {
     "key": 64,
     "name": "Cameroon",
     "region": "Africa",
     "width": 19,
     "height": 20,
-    "x": 514,
-    "y": 268
+    "x": 210,
+    "y": 314
   }, {
     "key": 72,
     "name": "Equitorial Guinea",
     "region": "Africa",
     "width": 5,
     "height": 4,
-    "x": 516,
-    "y": 287
+    "x": 197,
+    "y": 341
   }, {
     "key": 70,
     "name": "Gabon",
     "region": "Africa",
     "width": 13,
     "height": 14,
-    "x": 516,
-    "y": 288
+    "x": 207,
+    "y": 356
   }, {
     "key": 90,
     "name": "Congo",
     "region": "Africa",
     "width": 17,
     "height": 21,
-    "x": 522,
-    "y": 284
+    "x": 227,
+    "y": 353
   }, {
     "key": 68,
     "name": "Democratic Republic of Congo",
     "region": "Africa",
     "width": 51,
     "height": 47,
-    "x": 523,
-    "y": 279
+    "x": 271,
+    "y": 375
   }, {
     "key": 36,
     "name": "Uganda",
     "region": "Africa",
     "width": 13,
     "height": 12,
-    "x": 571,
-    "y": 284
+    "x": 346,
+    "y": 342
   }, {
     "key": 34,
     "name": "Kenya",
     "region": "Africa",
     "width": 19,
     "height": 22,
-    "x": 583,
-    "y": 282
+    "x": 381,
+    "y": 350
   }, {
     "key": 38,
     "name": "Tanzania",
     "region": "Africa",
     "width": 31,
     "height": 27,
-    "x": 569,
-    "y": 297
+    "x": 363,
+    "y": 392
   }, {
     "key": 74,
     "name": "Angola",
     "region": "Africa",
     "width": 32,
     "height": 31,
-    "x": 523,
-    "y": 309
+    "x": 249,
+    "y": 429
   }, {
     "key": 86,
     "name": "Zambia",
     "region": "Africa",
     "width": 30,
     "height": 24,
-    "x": 550,
-    "y": 316
+    "x": 313,
+    "y": 439
   }, {
     "key": 82,
     "name": "Zimbabwe",
     "region": "Africa",
     "width": 20,
     "height": 17,
-    "x": 560,
-    "y": 336
+    "x": 327,
+    "y": 481
   }, {
     "key": 84,
     "name": "Mozambique",
     "region": "Africa",
     "width": 27,
     "height": 39,
-    "x": 573,
-    "y": 323
+    "x": 370,
+    "y": 474
   }, {
     "key": 92,
     "name": "Madagascar",
     "region": "Africa",
     "width": 18,
     "height": 35,
-    "x": 608,
-    "y": 327
+    "x": 444,
+    "y": 481
   }, {
     "key": 88,
     "name": "Rwanda",
     "region": "Africa",
     "width": 8,
     "height": 19,
-    "x": 579,
-    "y": 138
+    "x": 360,
+    "y": 438
   }, {
     "key": 80,
     "name": "Botswana",
     "region": "Africa",
     "width": 24,
     "height": 23,
-    "x": 545,
-    "y": 342
+    "x": 293,
+    "y": 502
   }, {
     "key": 76,
     "name": "Namibia",
     "region": "Africa",
     "width": 24,
     "height": 33,
-    "x": 523,
-    "y": 339
+    "x": 240,
+    "y": 507
   }, {
     "key": 78,
     "name": "South Africa",
     "region": "Africa",
     "width": 41,
     "height": 36,
-    "x": 536,
-    "y": 353
+    "x": 292,
+    "y": 546
   }, {
     "key": 194,
     "name": "China",

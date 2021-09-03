@@ -18,6 +18,7 @@ var region;
 var loadingComplete;
 var countryImages;
 var countryText;
+var worldImage;
 
 const countryArray = [1,
   10,
@@ -196,7 +197,7 @@ function preload() {
   // this.scale.pageAlignVertically = true;
   // this.scale.refresh();
   countryArray.forEach(country => {
-    this.load.svg(country, 'shapes/'+country+'.svg', { scale: 3 });
+    this.load.svg(country, 'shapes/'+country+'.svg', { scale: 2.5 });
   });
   
 }
@@ -206,12 +207,15 @@ function setCountryLocation(country){
 
 }
 
-function drawCountry(game,country) {
-//  countries.forEach(country => {
- var x = country.x+region.centerX;
- var y = country.y+region.centerY;
+function drawWorld(game) {
+  var x = 150;
+  var y = 190;
+   worldImage = game.scene.add.image(x,y, 1).setOrigin(0.5);
 
-  var countryImage = game.scene.add.image(x,y, country.key).setOrigin(0.5);
+}
+
+function drawCountry(game,country) {
+   var countryImage = game.scene.add.image(country.x,country.y, country.key).setOrigin(0.5);
     countryImage.name = country.key;
      countryImage.setInteractive({ draggable: true })
     .on('drag', function(pointer, dragX, dragY){
@@ -227,11 +231,14 @@ function drawCountry(game,country) {
     let child = children.filter(e => e.countryID === country.name)[0];
      child.x = country.x;
      child.y = country.y;
+     countries.forEach(country => {
+       console.log(country.key,country.name,country.x,country.y)
+     });
     })
     countryImages.add(countryImage);
    var text = game.scene.make.text({
-    x: x-country.name.length*3,
-    y: y,
+    x: country.x-country.name.length*3,
+    y: country.y,
     text: country.name,
     style: {
       font: '18px monospace',
@@ -293,10 +300,11 @@ function create() {
 
 function onObjectClicked(pointer, gameObject) {
   if (gameObject.name == 'start') {
+    drawWorld(this);
       countries.forEach(country => {
       drawCountry(this,country);
     });
-   start.visible = false;
+    start.visible = false;
   }
 }
 
