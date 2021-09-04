@@ -9,7 +9,7 @@ var config = {
     create: create,
   },
 };
-const REGION = 'Africa';
+const REGION = 'Europe';
 var countries = []
 var game = new Phaser.Game(config);
 var regionData;
@@ -202,15 +202,9 @@ function preload() {
   
 }
 
-function setCountryLocation(country){
-//get size
-
-}
 
 function drawWorld(game) {
-  var x = 150;
-  var y = 190;
-   worldImage = game.scene.add.image(x,y, 1).setOrigin(0.5);
+   worldImage = game.scene.add.image(region.x,region.y, 1).setOrigin(0.5);
 
 }
 

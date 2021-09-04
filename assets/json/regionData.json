@@ -1,93 +1,67 @@
 [{
 "region": "Africa",
-"centerX": -200,
-"centerY": -100,
-"scaleX": 1,
-"scaleY": 1
+"x": 150,
+"y": 190
 },
 {
 "region": "Carribbean",
-"centerX": 100,
-"centerY": 100,
-"scaleX": 1,
-"scaleY": 1
+"x": 100,
+"y": 100
 },
 {
 "region": "Central America",
-"centerX": 100,
-"centerY": 100,
-"scaleX": 1,
-"scaleY": 1
+"x": 100,
+"y": 100
 },
 {
 "region": "Central Asia",
-"centerX": 100,
-"centerY": 100,
-"scaleX": 1,
-"scaleY": 1
+"x": 100,
+"y": 100
 },
 {
 "region": "East Asia",
-"centerX": 100,
-"centerY": 100,
-"scaleX": 1,
-"scaleY": 1
+"x": 100,
+"y": 100
 },
 {
 "region": "Europe",
-"centerX": 100,
-"centerY": 100,
-"scaleX": 1,
-"scaleY": 1
+"x": 200,
+"y": 550
 },
 {
 "region": "North America",
-"centerX": 100,
-"centerY": 100,
-"scaleX": 1,
-"scaleY": 1
+"x": 100,
+"y": 100
 },
 {
 "region": "North Asia",
-"centerX": 100,
-"centerY": 100,
-"scaleX": 1,
-"scaleY": 1
+"x": 100,
+"y": 100
 },
 {
 "region": "Pacific",
-"centerX": 100,
-"centerY": 100,
-"scaleX": 1,
-"scaleY": 1
+"x": 100,
+"y": 100
 },
 {
 "region": "South America",
-"centerX": 100,
-"centerY": 100,
-"scaleX": 1,
-"scaleY": 1
+"x": 100,
+"y": 100
 },
 {
 "region": "South Asia",
-"centerX": 100,
-"centerY": 100,
-"scaleX": 1,
-"scaleY": 1
+"x": 100,
+"y": 100
 },
 {
 "region": "Southeast Asia",
-"centerX": 100,
-"centerY": 100,
-"scaleX": 1,
-"scaleY": 1
+"x": 100,
+"y": 100
 },
 {
 "region": "West Asia",
-"centerX": 100,
-"centerY": 100,
-"scaleX": 1,
-"scaleY": 1
+"x": 100,
+"y": 100
 }
 ]
 
