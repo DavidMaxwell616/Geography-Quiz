@@ -20,8 +20,8 @@
 },
 {
 "region": "East Asia",
-"x": 100,
-"y": 100
+"x": -450,
+"y": 250
 },
 {
 "region": "Europe",
@@ -30,8 +30,8 @@
 },
 {
 "region": "North America",
-"x": 100,
-"y": 100
+"x":1050,
+"y":500
 },
 {
 "region": "North Asia",
@@ -45,13 +45,8 @@
 },
 {
 "region": "South America",
-"x": 100,
-"y": 100
-},
-{
-"region": "South Asia",
-"x": 100,
-"y": 100
+"x": 650,
+"y": 0
 },
 {
 "region": "Southeast Asia",
@@ -60,8 +55,8 @@
 },
 {
 "region": "West Asia",
-"x": 100,
-"y": 100
+"x": -150,
+"y": 400
 }
 ]
 

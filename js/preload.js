@@ -2,8 +2,9 @@ function preload() {
   this.load.path = '../assets/shapes/';
   this.load.image('background', '1.svg');
 
-  this.load.path = '../assets/';
+  this.load.path = '../assets/json/';
   this.load.json('countryData', 'countryData.json');
+  this.load.json('regionData', 'regionData.json');
   this.load.image('maxxdaddy', 'maxxdaddy.gif');
   this.load.image('start', 'start.png');
   this.load.image('menu', 'dialog.png');

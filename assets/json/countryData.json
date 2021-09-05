@@ -2,33 +2,33 @@
     "key": 10,
     "name": "Alaska",
     "region": "North America",
-    "x": 33,
-    "y": 63
+    "x": 14,
+    "y": 176
   },
   {
     "key": 6,
     "name": "Canada",
     "region": "North America",
-    "x": 107,
-    "y": 0
+    "x": 364,
+    "y": 145
   }, {
     "key": 4,
     "name": "USA",
     "region": "North America",
-    "x": 151,
-    "y": 152
+    "x": 374,
+    "y": 402
   }, {
     "key": 8,
     "name": "Greenland",
     "region": "North America",
-    "x": 293,
-    "y": 0
+    "x": 733,
+    "y": 69
   }, {
     "key": 12,
     "name": "Mexico",
     "region": "North America",
-    "x": 172,
-    "y": 205
+    "x": 333,
+    "y": 500
   }, {
     "key": 14,
     "name": "Cuba",
@@ -101,80 +101,80 @@
     "key": 244,
     "name": "Venezuela",
     "region": "South America",
-    "x": 292,
-    "y": 264
+    "x": 172,
+    "y": 123
   }, {
     "key": 242,
     "name": "Colombia",
     "region": "South America",
-    "x": 276,
-    "y": 264
+    "x": 129,
+    "y": 134
   }, {
     "key": 246,
     "name": "Guyana",
     "region": "South America",
-    "x": 324,
-    "y": 273
+    "x": 225,
+    "y": 131
   }, {
     "key": 248,
     "name": "Suriname",
     "region": "South America",
-    "x": 332,
-    "y": 278
+    "x": 242,
+    "y": 133
   }, {
     "key": 250,
     "name": "French Guyana",
     "region": "South America",
-    "x": 342,
-    "y": 281
+    "x": 266,
+    "y": 138
   }, {
     "key": 186,
     "name": "Brazil",
     "region": "South America",
-    "x": 288,
-    "y": 280
+    "x": 254 ,
+    "y": 260
   }, {
     "key": 256,
     "name": "Bolivia",
     "region": "South America",
-    "x": 302,
-    "y": 320
+    "x": 194 ,
+    "y": 272
   }, {
     "key": 262,
     "name": "Argentina",
     "region": "South America",
-    "x": 292,
-    "y": 353
+    "x": 189 ,
+    "y": 425
   }, {
     "key": 254,
     "name": "Peru",
     "region": "South America",
-    "x": 269,
-    "y": 295
+    "x": 115 ,
+    "y": 225
   }, {
     "key": 264,
     "name": "Uraguay",
     "region": "South America",
-    "x": 331,
-    "y": 376
+    "x": 246 ,
+    "y": 386
   }, {
     "key": 258,
     "name": "Paraguay",
     "region": "South America",
-    "x": 320,
-    "y": 346
+    "x": 228 ,
+    "y": 320
   }, {
     "key": 260,
     "name": "Chile",
     "region": "South America",
-    "x": 289,
-    "y": 342
+    "x": 145 ,
+    "y": 368
   }, {
     "key": 252,
     "name": "Ecuador",
     "region": "South America",
-    "x": 269,
-    "y": 290
+    "x": 93 ,
+    "y": 174
   }, {
     "key": 236,
     "name": "Russia",
@@ -377,38 +377,32 @@
     "key": 146,
     "name": "Turkey",
     "region": "West Asia",
-    "x": 561,
-    "y": 175
+    "x": 66,
+    "y": 290
   }, {
     "key": 172,
     "name": "Syria",
     "region": "West Asia",
-    "x": 588,
-    "y": 192
+    "x": 88,
+    "y": 324
   }, {
     "key": 176,
     "name": "Israel",
     "region": "West Asia",
-    "x": 584,
-    "y": 202
+    "x": 64,
+    "y": 347
   }, {
     "key": 174,
     "name": "Jordan",
     "region": "West Asia",
-    "x": 586,
-    "y": 203
-  }, {
-    "key": 282,
-    "name": "Iraq",
-    "region": "West Asia",
-    "x": 595,
-    "y": 190
+    "x": 79,
+    "y": 349
   }, {
     "key": 282,
     "name": "Azerbaijan",
     "region": "West Asia",
-    "x": 613,
-    "y": 176
+    "x": 147,
+    "y": 282
   }, {
     "key": 26,
     "name": "Egypt",
@@ -449,21 +443,21 @@
     "key": 178,
     "name": "Saudi Arabia",
     "region": "West Asia",
-    "x": 585,
-    "y": 207
+    "x": 133,
+    "y": 400
   }, {
     "key": 284,
     "name": "Yemen",
     "region": "West Asia",
-    "x": 632,
-    "y": 227
+    "x": 206,
+    "y": 421
   },
   {
     "key": 180,
     "name": "Oman",
     "region": "West Asia",
-    "x": 607,
-    "y": 244
+    "x": 152,
+    "y": 457
   }, {
     "key": 294,
     "name": "Eritrea",
@@ -684,159 +678,159 @@
     "key": 194,
     "name": "China",
     "region": "East Asia",
-    "x": 690,
-    "y": 137
+    "x": 233,
+    "y": 149
   }, {
     "key": 222,
     "name": "North Korea",
     "region": "East Asia",
-    "x": 829,
-    "y": 174
+    "x": 390,
+    "y": 133
   }, {
     "key": 224,
     "name": "South Korea",
     "region": "East Asia",
-    "x": 834,
-    "y": 187
+    "x": 394,
+    "y": 163
   }, {
     "key": 226,
     "name": "Japan",
     "region": "East Asia",
-    "x": 845,
-    "y": 179
+    "x": 451,
+    "y": 161
   }, {
     "key": 238,
     "name": "Taiwan",
     "region": "East Asia",
-    "x": 3,
-    "y": 6
+    "x": 346,
+    "y": 258
   }, {
     "key": 280,
     "name": "Iraq",
     "region": "West Asia",
-    "x": 595,
-    "y": 190
+    "x": 122,
+    "y": 334
   }, {
     "key": 188,
     "name": "Iran",
-    "region": "South Asia",
-    "x": 610,
-    "y": 184
+    "region": "West Asia",
+    "x":190,
+    "y": 341
   }, {
     "key": 184,
     "name": "Afghanistan",
-    "region": "South Asia",
-    "x": 655,
-    "y": 188
+    "region": "West Asia",
+    "x": 276,
+    "y": 331
   }, {
     "key": 190,
     "name": "Turkmenistan",
-    "region": "Central Asia",
-    "x": 634,
-    "y": 174
+    "region": "West Asia",
+    "x": 231,
+    "y": 292
   }, {
     "key": 192,
     "name": "Uzbekistan",
-    "region": "Central Asia",
-    "x": 643,
-    "y": 165
+    "region": "West Asia",
+    "x": 251,
+    "y": 272
   }, {
     "key": 202,
     "name": "Tajikistan",
-    "region": "Central Asia",
-    "x": 674,
-    "y": 183
+    "region": "West Asia",
+    "x": 309,
+    "y": 297
   }, {
     "key": 198,
     "name": "Kyrgyzstan",
-    "region": "Central Asia",
-    "x": 682,
-    "y": 171
+    "region": "West Asia",
+    "x": 334,
+    "y": 273
   }, {
     "key": 170,
     "name": "Georgia",
     "region": "West Asia",
-    "x": 603,
-    "y": 172
+    "x": 124,
+    "y": 267
   },
   {
     "key": 96,
     "name": "India",
-    "region": "South Asia",
-    "x": 677,
-    "y": 197
+    "region": "West Asia",
+    "x": 388,
+    "y": 414
   }, {
     "key": 196,
     "name": "Nepal",
-    "region": "South Asia",
-    "x": 709,
-    "y": 212
+    "region": "West Asia",
+    "x": 397,
+    "y": 371
   }, {
     "key": 228,
     "name": "Mongolia",
     "region": "East Asia",
-    "x": 729,
-    "y": 142
+    "x": 229,
+    "y": 77
   }, {
     "key": 182,
     "name": "Pakistan",
-    "region": "South Asia",
-    "x": 660,
-    "y": 192
+    "region": "West Asia",
+    "x": 299,
+    "y": 356
   }, {
     "key": 206,
     "name": "Bangladesh",
-    "region": "South Asia",
-    "x": 730,
-    "y": 223
+    "region": "West Asia",
+    "x": 439,
+    "y": 402
   }, {
     "key": 208,
     "name": "Myanmar",
-    "region": "Southeast Asia",
-    "x": 741,
-    "y": 218
+    "region": "East Asia",
+    "x": 178,
+    "y": 266
   }, {
     "key": 210,
     "name": "Thailand",
-    "region": "Southeast Asia",
-    "x": 755,
-    "y": 239
+    "region": "East Asia",
+    "x": 216,
+    "y": 321
   }, {
     "key": 218,
     "name": "Malaysia",
-    "region": "Southeast Asia",
-    "x": 763,
-    "y": 276
+    "region": "East Asia",
+    "x": 274,
+    "y": 388
   }, {
     "key": 234,
     "name": "Phillipines",
-    "region": "Southeast Asia",
-    "x": 816,
-    "y": 244
+    "region": "East Asia",
+    "x": 346,
+    "y": 307
   }, {
     "key": 216,
     "name": "Cambodia",
-    "region": "Southeast Asia",
-    "x": 767,
-    "y": 255
+    "region": "East Asia",
+    "x": 237,
+    "y": 329
   }, {
     "key": 214,
     "name": "Vietnam",
-    "region": "Southeast Asia",
-    "x": 769,
-    "y": 232
+    "region": "East Asia",
+    "x": 247,
+    "y": 306
   }, {
     "key": 212,
     "name": "Laos",
-    "region": "Southeast Asia",
-    "x": 764,
-    "y": 235
+    "region": "East Asia",
+    "x": 235,
+    "y": 291
   }, {
     "key": 220,
     "name": "Indonesia",
-    "region": "Southeast Asia",
-    "x": 750,
-    "y": 280
+    "region": "East Asia",
+    "x": 330,
+    "y": 422
   }, {
     "key": 230,
     "name": "New Guinea",
