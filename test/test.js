@@ -9,7 +9,7 @@ var config = {
     create: create,
   },
 };
-const REGION = 'East Asia';
+const REGION = 'West Asia';
 var countries = []
 var game = new Phaser.Game(config);
 var regionData;
