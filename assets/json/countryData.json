@@ -53,8 +53,8 @@
     "region": "Central America",
     "width": 7,
     "height": 9,
-    "x": 240,
-    "y": 247
+    "x": 159,
+    "y": 159
   }, {
     "key": 276,
     "name": "Haiti",
@@ -71,26 +71,26 @@
     "key": 264,
     "name": "Nicaragua",
     "region": "Central America",
-    "x": 254,
-    "y": 255
+    "x": 191,
+    "y": 167
   }, {
     "key": 282,
     "name": "Honduras",
     "region": "Central America",
-    "x": 249,
-    "y": 251
+    "x": 184,
+    "y": 149
   }, {
     "key": 242,
     "name": "Panama",
     "region": "Central America",
-    "x": 266,
-    "y": 269
+    "x": 278,
+    "y": 234
   }, {
     "key": 272,
     "name": "Costa Rica",
     "region": "Central America",
-    "x": 259,
-    "y": 265
+    "x": 203,
+    "y": 192
   }, {
     "key": 280,
     "name": "Puerto Rico",
@@ -178,9 +178,9 @@
   }, {
     "key": 236,
     "name": "Russia",
-    "region": "North Asia",
-    "x": 565,
-    "y": 30
+    "region": "East Asia",
+    "x": 256,
+    "y": -63
   }, {
     "key": 200,
     "name": "Kazakhstan",
@@ -834,20 +834,20 @@
   }, {
     "key": 230,
     "name": "New Guinea",
-    "region": "Pacific",
-    "x": 874,
-    "y": 300
+    "region": "East Asia",
+    "x": 515,
+    "y": 454
   }, {
     "key": 94,
     "name": "Australia",
-    "region": "Pacific",
-    "x": 798,
-    "y": 324
+    "region": "East Asia",
+    "x": 433,
+    "y": 587
   }, {
     "key": 98,
     "name": "New Zealand",
-    "region": "Pacific",
-    "x": 943,
-    "y": 396
+    "region": "East Asia",
+    "x": 57,
+    "y": 548
   }
 ]
