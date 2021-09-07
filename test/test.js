@@ -9,7 +9,7 @@ var config = {
     create: create,
   },
 };
-const REGION = 'East Asia';
+const REGION = 'Central America';
 var countries = []
 var game = new Phaser.Game(config);
 var regionData;
@@ -304,11 +304,11 @@ function onObjectClicked(pointer, gameObject) {
 
 function showLoader(game) {
   var progressBar = game.add.graphics();
-  var progressBox = game.add.graphics();
   var width = game.cameras.main.width;
   var height = game.cameras.main.height;
-  progressBox.fillStyle(0x222222, 0.8);
-  progressBox.fillRect(width/3, 270, 320, 50);
+  var progressBox = game.add.graphics();
+   progressBox.fillStyle(0xffffff, .1);
+   progressBox.fillRect(width/3, 270, 320, 50);
   game.load.on('progress', function (value) {});
 
   game.load.on('fileprogress', function (file) {});

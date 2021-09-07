@@ -3,7 +3,7 @@ let background;
 let maxxdaddy;
 let start;
 let menu;
-let menuText = [];
+let menuText;
 let menuTitle;
 let startGame = false;
 let timerBox;
@@ -20,12 +20,12 @@ let countries;
 let wait = false;
 let cty;
 let menuShowing;
-let menuWidth = 0;
-let menuHeight = 0;
 let regions = [];
 const orange = '#FFA500';
 let selectedRegion;
-
+let menuBox;
+let countryImages;
+let countryText;
 const countryArray = [1,
 10,
 100,

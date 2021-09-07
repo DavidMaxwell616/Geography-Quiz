@@ -32,15 +32,15 @@
   }, {
     "key": 14,
     "name": "Cuba",
-    "region": "Carribbean",
-    "x": 265,
-    "y": 231
+    "region": "Central America",
+    "x": 157,
+    "y": 126
   }, {
     "key": 16,
     "name": "Dominican Republic",
-    "region": "Carribbean",
-    "x": 295,
-    "y": 241
+    "region": "Central America",
+    "x": 230,
+    "y": 138
   }, {
     "key": 106,
     "name": "Iceland",
@@ -53,26 +53,26 @@
     "region": "Central America",
     "width": 7,
     "height": 9,
-    "x": 159,
-    "y": 159
+    "x": 59,
+    "y": 158
   }, {
     "key": 276,
     "name": "Haiti",
-    "region": "Carribbean",
-    "x": 285,
-    "y": 240
+    "region": "Central America",
+    "x": 220,
+    "y": 137
   }, {
-    "key": 278,
+    "key": 274,
     "name": "Jamaica",
-    "region": "Carribbean",
-    "x": 277,
-    "y": 244
+    "region": "Central America",
+    "x": 145,
+    "y": 144
   }, {
-    "key": 264,
+    "key": 266,
     "name": "Nicaragua",
     "region": "Central America",
-    "x": 191,
-    "y": 167
+    "x": 87,
+    "y": 174
   }, {
     "key": 282,
     "name": "Honduras",
@@ -80,101 +80,101 @@
     "x": 184,
     "y": 149
   }, {
-    "key": 242,
+    "key":268,
     "name": "Panama",
     "region": "Central America",
-    "x": 278,
-    "y": 234
+    "x": 135,
+    "y": 211
   }, {
     "key": 272,
     "name": "Costa Rica",
     "region": "Central America",
-    "x": 203,
-    "y": 192
+    "x": 89,
+    "y": 186
   }, {
-    "key": 280,
+    "key": 278,
     "name": "Puerto Rico",
-    "region": "Carribbean",
-    "x": 309,
-    "y": 243
+    "region": "Central America",
+    "x": 242,
+    "y": 143
   }, {
     "key": 244,
     "name": "Venezuela",
     "region": "South America",
-    "x": 172,
-    "y": 123
+    "x": 222,
+    "y": 143
   }, {
     "key": 242,
     "name": "Colombia",
     "region": "South America",
-    "x": 129,
-    "y": 134
+    "x": 179,
+    "y": 154
   }, {
     "key": 246,
     "name": "Guyana",
     "region": "South America",
-    "x": 225,
-    "y": 131
+    "x": 275,
+    "y": 153
   }, {
     "key": 248,
     "name": "Suriname",
     "region": "South America",
-    "x": 242,
-    "y": 133
+    "x": 288,
+    "y": 154
   }, {
     "key": 250,
     "name": "French Guyana",
     "region": "South America",
-    "x": 266,
-    "y": 138
+    "x": 315,
+    "y": 158
   }, {
     "key": 186,
     "name": "Brazil",
     "region": "South America",
-    "x": 254 ,
-    "y": 260
+    "x": 305 ,
+    "y": 281
   }, {
     "key": 256,
     "name": "Bolivia",
     "region": "South America",
-    "x": 194 ,
-    "y": 272
+    "x": 245 ,
+    "y": 293
   }, {
     "key": 262,
     "name": "Argentina",
     "region": "South America",
-    "x": 189 ,
-    "y": 425
+    "x": 240 ,
+    "y": 445
   }, {
     "key": 254,
     "name": "Peru",
     "region": "South America",
-    "x": 115 ,
-    "y": 225
+    "x": 167 ,
+    "y": 245
   }, {
     "key": 264,
     "name": "Uraguay",
     "region": "South America",
-    "x": 246 ,
-    "y": 386
+    "x": 295 ,
+    "y": 405
   }, {
     "key": 258,
     "name": "Paraguay",
     "region": "South America",
-    "x": 228 ,
-    "y": 320
+    "x": 278 ,
+    "y": 340
   }, {
     "key": 260,
     "name": "Chile",
     "region": "South America",
-    "x": 145 ,
-    "y": 368
+    "x": 195 ,
+    "y": 389
   }, {
     "key": 252,
     "name": "Ecuador",
     "region": "South America",
-    "x": 93 ,
-    "y": 174
+    "x": 142 ,
+    "y": 194
   }, {
     "key": 236,
     "name": "Russia",

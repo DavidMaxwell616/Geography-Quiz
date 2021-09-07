@@ -10,7 +10,7 @@
 },
 {
 "region": "Central America",
-"x": 800,
+"x": 700,
 "y": 100
 },
 {
@@ -29,24 +29,9 @@
 "y":500
 },
 {
-"region": "North Asia",
-"x": 100,
-"y": 100
-},
-{
-"region": "Pacific",
-"x": -500,
-"y": 100
-},
-{
 "region": "South America",
-"x": 650,
-"y": 0
-},
-{
-"region": "Southeast Asia",
-"x": 100,
-"y": 100
+"x": 700,
+"y": 20
 },
 {
 "region": "West Asia",
