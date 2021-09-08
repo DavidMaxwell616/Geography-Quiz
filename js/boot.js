@@ -6,16 +6,17 @@ let menu;
 let menuText;
 let menuTitle;
 let startGame = false;
+let splashBox;
+let splashText;
 let timerBox;
 let timerBar;
 let timerBar2;
-let country;
 let lives = 5;
 let timerCount = 0;
 let attemptStarted = false;
 let alertText;
 let alertCounter = 5000;
-let correctAnswers = [];
+let correctAnswers = 0;
 let countries;
 let wait = false;
 let cty;
@@ -26,6 +27,8 @@ let selectedRegion;
 let menuBox;
 let countryImages;
 let countryText;
+let randCountry;
+
 const countryArray = [1,
 10,
 100,
