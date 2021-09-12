@@ -11,23 +11,23 @@ let splashText;
 let timerBox;
 let timerBar;
 let timerBar2;
-let lives = 5;
+let lives = 3;
 let timerCount = 0;
-let attemptStarted = false;
+let attempt= false;
+let percent = 0;
 let alertText;
 let alertCounter = 5000;
-let correctAnswers = 0;
-let countries;
 let wait = false;
 let cty;
 let menuShowing;
-let regions = [];
+let regions=[];
 const orange = '#FFA500';
 let selectedRegion;
 let menuBox;
 let countryImages;
 let countryText;
 let randCountry;
+let currentCountry;
 
 const countryArray = [1,
 10,

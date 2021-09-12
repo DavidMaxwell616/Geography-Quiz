@@ -10,28 +10,24 @@ var config = {
     update: update,
   },
 };
+const width = config.width;
+const height = config.height;
 
 var game = new Phaser.Game(config);
 var scene;
   
 function create() {
   scene = this;
-  countryData = this.cache.json.get('countryData');
-  regionData = this.cache.json.get('regionData');
   if (!startGame) mainMenuCreate(scene,game.config);
   else gameCreate();
 }
 
 function gameCreate(){
-  const width = scene.game.config.width;
-  const height = scene.game.config.height;
-  countries = scene.add.group();
-  countries = countryData.filter(word => word.region == selectedRegion);
-  region = regionData.filter(word => word.region == selectedRegion)[0];
+  region = regions.filter(word => word.region == selectedRegion)[0];
   countryImages = scene.add.group();
   countryText = scene.add.group();
    drawWorld(scene);
-  countries.forEach(country => {
+  region.countries.forEach(country => {
   drawCountry(scene,country);
   });
   menuBox = scene.add.graphics();
@@ -61,8 +57,8 @@ start.setInteractive();
   );
   
   menuText = scene.make.text({
-    x: width *.65,
-    y: height *.55,
+    x: width *.63,
+    y: height *.6,
     text: '',
     style: {
       font: '26px Arial',
@@ -89,12 +85,15 @@ start.setInteractive();
     305,
     20,
   );
+  timerBox.visible = false;
+  timerBar.visible = false;
+  timerBar2.visible = false;
 
 }
 
 function drawCountry(scene,country) {
   var countryImage = scene.add.image(country.x,country.y, country.key).setOrigin(0.5);
-   countryImage.name = country.key;
+   countryImage.name = country.name;
     countryImage.setInteractive();
    countryImages.add(countryImage);
   var text = scene.make.text({
@@ -135,18 +134,15 @@ function onObjectClicked(pointer, gameObject) {
     alertText.setText('');
     startGame = true;
     menuText.setText(getMenuText());
-    attemptStarted = false;
     start.setText(selectedRegion);
-    console.log(menuText);
-  } else if (attemptStarted && gameObject.name == 'background') {
-    if (
-      pointer.downX > country.x &&
-      pointer.downX < country.x + country.width &&
-      pointer.downY > country.y &&
-      pointer.downY < country.y + country.height
-    )
-      correctAnswer(this);
-    else wrongAnswer(this);
+    timerBox.visible = true;
+    timerBar.visible = true;
+    timerBar2.visible = true;
+  } else 
+  {
+    if(gameObject.name==currentCountry){
+      console.log('Match!');
+    }
   }
 }
 }
@@ -199,76 +195,49 @@ function resizeMenu(upDown)
 }
 
 function getMenuText(){
-  const country = getCountry();
+  currentCountry = getCountry();
   return 'Find: ' +
-  country.name +
-  '\nAttempts left: ' +
+  currentCountry.name +
+  '\n\nAttempts left: ' +
   lives +
-  '\nCorrect Answers: ' +
-  correctAnswers + ' - ' + Math.floor(correctAnswers/countries.length) + '%';
+  '\n\nCorrect Answers: ' +
+  region.correctAnswers + ' - ' + percent + '%';
 }
 
 function getCountry() {
-  var rand =Phaser.Math.Between(2, countries.length);
-  return countries[rand];
+  var rand =Phaser.Math.Between(2, region.countries.length);
+  return region.countries[rand];
 }
 
 function update() {
-if(!startGame || countries.length>0)
-return;
+if(!startGame || region.countries==null)
+  return;
   if (lives > 0) {
-    if (timerCount < 320) {
-      if (!attemptStarted) {
-        randCountry = getCountry();
-        // country = countryData[21];
-        // console.log(country);
-        attemptStarted = true;
-        timerCount = 0;
-        timerBar2.clear();
-        timerBar2.fillStyle(0x111111, 0.8);
-      }
-      if (!wait) {
-        timerBar2.fillRect(
-         config.width / 2 + 250 - timerCount,
-         config.height - 85,
-          timerCount,
-          20,
-        );
-        timerCount++;
-      }
-    } else {
-      attemptStarted = false;
-      lives--;
-      timerCount = 0;
-    }
-    let percent = (correctAnswers.length / countryData.length * 100).toFixed(2);;
-    menuText.setText(getMenuText);
-    menuText.setFont('16px Arial');
-  } else {
-    alertText.visible = true;
-    alertText.setText('GAME OVER!');
-    scene.time.addEvent({
-      delay: 5000, // ms
-      callback: callback => {
-        alertText.visible = false;
-        scene.game.config.width / 2 - 100,
-          scene.game.config.height * 0.8,
-          menuText.setText('GEOGRAPHY QUIZ');
-        menuText.setPosition(scene.game.config.width / 2 - 60,
-          scene.game.config.height * 0.83);
-        menuText.setFont('bold 32px Arial');
-        start.visible = true;
-        start.setInteractive();
-        startGame = false;
-        timerBox.visible = false;
-        timerBar.visible = false;
-        timerBar2.visible = false;
-        lives = 5;
-        correctAnswers = [];
-        countries.clear(true);
-      },
-      callbackScope: game.scene,
-      loop: false,
-    });
-  }
+  //  if (timerCount < 320) {
+  //    console.log(timerCount);
+  //     if (!attempt) {
+  //       //randCountry = getCountry();
+  //       // country = countryData[21];
+  //       // console.log(country);
+  //       attempt = true;
+  //       timerCount = 0;
+  //       timerBar2.clear();
+  //       timerBar2.fillStyle(0x111111, 0.8);
+  //     }
+  //    if (!wait) {
+  //       timerBar2.fillRect(
+  //         width - timerCount,
+  //         height - 35,
+  //         timerCount,
+  //         20,
+  //       );
+  //       timerCount++;
+  //     }
+  //   } else {
+  //     attempt = false;
+  //     lives--;
+  //     timerCount = 0;
+  //   }
+  //      percent = (region.correctAnswers / region.countries.length * 100);
+   }
 }
