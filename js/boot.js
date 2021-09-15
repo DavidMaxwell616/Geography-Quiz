@@ -12,8 +12,7 @@ let timerBox;
 let timerBar;
 let timerBar2;
 let lives = 3;
-let timerCount = 0;
-let attempt= false;
+let roundStarted= false;
 let percent = 0;
 let alertText;
 let alertCounter = 5000;
@@ -28,6 +27,8 @@ let countryImages;
 let countryText;
 let randCountry;
 let currentCountry;
+const TIMER_COUNT = 320;
+let timerCount = TIMER_COUNT;
 
 const countryArray = [1,
 10,

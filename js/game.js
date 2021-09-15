@@ -45,16 +45,16 @@ function gameCreate(){
   
 start.name = 'start';
 start.setInteractive();
-  alertText = scene.make.text(
-    width*.6,
-    height / 2 - 100,
-    '', {
-      fontFamily: 'arial',
-      fontSize: '32px',
-      fontStyle: 'bold',
-      fill: '#ff0000',
+
+alertText = scene.make.text({
+    x: width *.3,
+    y: height *.4,
+    text: '',
+    style: {
+      font: '66px IMPACT',
+      fill: '#ff0000'
     },
-  );
+  });
   
   menuText = scene.make.text({
     x: width *.63,
@@ -88,7 +88,13 @@ start.setInteractive();
   timerBox.visible = false;
   timerBar.visible = false;
   timerBar2.visible = false;
-
+  timerBar2.fillStyle(0x111111, 0.8);
+  timerBar2.fillRect(
+    width,
+    height - 35,
+    325,
+    20,
+  );
 }
 
 function drawCountry(scene,country) {
@@ -138,31 +144,39 @@ function onObjectClicked(pointer, gameObject) {
     timerBox.visible = true;
     timerBar.visible = true;
     timerBar2.visible = true;
+    roundStarted = true;
   } else 
   {
     if(gameObject.name==currentCountry){
-      console.log('Match!');
+      if(!alertText.visible)
+           correctAnswer();
     }
   }
 }
 }
 
-function correctAnswer(game) {
+function correctAnswer() {
   alertText.visible = true;
   alertText.setText('CORRECT!');
   alertText.setDepth(1);
-  tmpCountry = country;
-  game.scene.time.addEvent({
-    delay: 2000, // ms
-    callback: callback => {
+  _scene.time.addEvent({
+  delay: 2000, // ms
+  callback: callback => {
       alertText.visible = false;
-      timerCount = 0;
-      attemptStarted = false;
-      drawCountry(game, tmpCountry);
+      var ctryImg = countryImages.getChildren().filter(x=> x.name == currentCountry)[0];
+      ctryImg.destroy();
+      ctry = region.countries.filter(x=> x.name == currentCountry);
+      ctry.solved = true;
+      region.correctAnswers++;
+      region.score+=timerCount;
+      currentCountry = getCountry();
+      roundStarted = true;
+      timerBar2.x = width;
+      menuText.setText(getMenuText());
+      timerCount = TIMER_COUNT;
       wait = false;
-      correctAnswers.push(country);
     },
-    callbackScope: game.scene,
+    callbackScope: _scene,
     loop: false,
   });
   wait = true;
@@ -172,9 +186,35 @@ function wrongAnswer(game) {
   alertText.visible = true;
   alertText.setText('INCORRECT!');
   alertText.setDepth(1);
-  game.scene.time.addEvent({
+  _scene.time.addEvent({
     delay: 2000, // ms
     callback: callback => {
+      alertText.visible = false;
+      currentCountry = getCountry();
+      roundStarted = true;
+      timerBar2.x = width;
+      menuText.setText(getMenuText());
+      timerCount = TIMER_COUNT;
+      wait = false;
+    },
+    callbackScope: game.scene,
+    loop: false,
+  });
+}
+
+function timeOut(game) {
+  alertText.visible = true;
+  alertText.setText('TIME OUT!');
+  alertText.setDepth(1);
+  _scene.time.addEvent({
+    delay: 2000, // ms
+    callback: callback => {
+      currentCountry = getCountry();
+      roundStarted = true;
+      timerBar2.x = width;
+      menuText.setText(getMenuText());
+      timerCount = TIMER_COUNT;
+      wait = false;
       alertText.visible = false;
     },
     callbackScope: game.scene,
@@ -182,62 +222,40 @@ function wrongAnswer(game) {
   });
 }
 
-
-function resizeMenu(upDown)
-{
-
-  if(upDown>0 && menu.scale<1){
-     menu.setScale(menu.scale+upDown);
-     menuShowing=false;
-    }
-  else
-  menuShowing=true;
-}
-
 function getMenuText(){
-  currentCountry = getCountry();
+ var percent = (region.correctAnswers / region.countries.length * 100);
+ currentCountry = getCountry();
   return 'Find: ' +
-  currentCountry.name +
-  '\n\nAttempts left: ' +
-  lives +
-  '\n\nCorrect Answers: ' +
-  region.correctAnswers + ' - ' + percent + '%';
+  currentCountry +
+  '\n\nAttempts left: ' +  lives +
+  '\n\nCorrect Answers: ' + region.correctAnswers + ' - ' + percent + '%' +
+  '\n\nScore: ' + region.score;
 }
 
 function getCountry() {
-  var rand =Phaser.Math.Between(2, region.countries.length);
-  return region.countries[rand];
+  var countries = region.countries.filter(x=> !x.solved);
+  var rand = Phaser.Math.Between(0, countries.length-1);
+  return countries[rand].name;
 }
 
 function update() {
 if(!startGame || region.countries==null)
   return;
-  if (lives > 0) {
-  //  if (timerCount < 320) {
-  //    console.log(timerCount);
-  //     if (!attempt) {
-  //       //randCountry = getCountry();
-  //       // country = countryData[21];
-  //       // console.log(country);
-  //       attempt = true;
-  //       timerCount = 0;
-  //       timerBar2.clear();
-  //       timerBar2.fillStyle(0x111111, 0.8);
-  //     }
-  //    if (!wait) {
-  //       timerBar2.fillRect(
-  //         width - timerCount,
-  //         height - 35,
-  //         timerCount,
-  //         20,
-  //       );
-  //       timerCount++;
-  //     }
-  //   } else {
-  //     attempt = false;
-  //     lives--;
-  //     timerCount = 0;
-  //   }
-  //      percent = (region.correctAnswers / region.countries.length * 100);
-   }
+
+  if(lives==0)
+  startGame = false;
+    if(roundStarted)
+{
+   if(!wait){
+      timerBar2.x = width-(TIMER_COUNT-timerCount);
+      timerCount--;
+      if(timerCount==0){
+        roundStarted=false;
+        lives--;
+        timeOut(this);
+      }
+  
+  }
+  }
+ 
 }

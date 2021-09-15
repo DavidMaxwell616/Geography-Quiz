@@ -14,6 +14,7 @@ regionData.forEach(region => {
   region.countries = [];
   var countries = countryData.filter(word => word.region == region.region);
   countries.forEach(country => {
+    country.solved = false;
     region.countries.push(country);    
     });
   region.countryCount = region.countries.length;
