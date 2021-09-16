@@ -34,12 +34,12 @@ function gameCreate(){
   menuBox.fillStyle(0x333333, 1);
   menuBox.fillRect(width*.6, height*.4, 450, 400);
   start = scene.make.text({
-    x: width *.7,
+    x: width *.65,
     y: height *.4,
-    text: 'START!',
+    text: '   START!',
     style: {
       font: '66px IMPACT',
-      fill: '#FFA500'
+      fill: '#FFA500',
     }
   });
   
@@ -58,7 +58,7 @@ alertText = scene.make.text({
   
   menuText = scene.make.text({
     x: width *.63,
-    y: height *.6,
+    y: height *.52,
     text: '',
     style: {
       font: '26px Arial',
@@ -141,6 +141,7 @@ function onObjectClicked(pointer, gameObject) {
     startGame = true;
     menuText.setText(getMenuText());
     start.setText(selectedRegion);
+    start.setFont('44px IMPACT');
     timerBox.visible = true;
     timerBar.visible = true;
     timerBar2.visible = true;
@@ -228,7 +229,7 @@ function getMenuText(){
   return 'Find: ' +
   currentCountry +
   '\n\nAttempts left: ' +  lives +
-  '\n\nCorrect Answers: ' + region.correctAnswers + ' - ' + percent + '%' +
+  '\n\nCorrect Answers: ' + percent + '%' +
   '\n\nScore: ' + region.score;
 }
 
@@ -247,7 +248,7 @@ if(!startGame || region.countries==null)
     if(roundStarted)
 {
    if(!wait){
-      timerBar2.x = width-(TIMER_COUNT-timerCount);
+      timerBar2.x--;
       timerCount--;
       if(timerCount==0){
         roundStarted=false;
