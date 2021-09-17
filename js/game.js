@@ -166,8 +166,8 @@ function correctAnswer() {
       alertText.visible = false;
       var ctryImg = countryImages.getChildren().filter(x=> x.name == currentCountry)[0];
       ctryImg.destroy();
-      ctry = region.countries.filter(x=> x.name == currentCountry);
-      ctry.solved = true;
+      var index = region.countries.findIndex((obj => obj.name == currentCountry));
+      region.countries[index].solved = true;
       region.correctAnswers++;
       region.score+=timerCount;
       currentCountry = getCountry();
