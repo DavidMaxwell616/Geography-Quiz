@@ -13,13 +13,12 @@ function preload() {
 }
 
 function showLoader(game) {
-  var progressBar = game.add.graphics();
   var width = game.cameras.main.width;
   var height = game.cameras.main.height;
-  var progressBox = game.add.graphics();
-   progressBox.fillStyle(0xffffff, .2);
-   progressBox.fillRect(width/3, 270, 320, 50);
-  game.load.on('progress', function (value) {});
+  progressBox = game.add.rectangle(width/2, 300, 320, 50, 0xffffff, .2);
+  progressBar = game.add.rectangle(width/2+2, 300, 300, 30,0xffff00, 1);
+ 
+   game.load.on('progress', function (value) {});
 
   game.load.on('fileprogress', function (file) {});
 
@@ -30,9 +29,7 @@ function showLoader(game) {
     percentText.destroy();
   });
   game.load.on('progress', function (value) {
-    progressBar.clear();
-    progressBar.fillStyle(0xffff00, 1);
-    progressBar.fillRect(width/3+10, 280, 300 * value, 30);
+    progressBar.width = 300 * value;
     percentText.setText(parseInt(value * 100) + '%');
   });
 
@@ -48,7 +45,7 @@ function showLoader(game) {
   loadingText.setOrigin(0.5, 0.5);
 
   var percentText = game.make.text({
-    x: width/3.5,
+    x: width/4,
     y: height / 2 - 5,
     text: '0%',
     style: {

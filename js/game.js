@@ -30,9 +30,7 @@ function gameCreate(){
   region.countries.forEach(country => {
   drawCountry(scene,country);
   });
-  menuBox = scene.add.graphics();
-  menuBox.fillStyle(0x333333, 1);
-  menuBox.fillRect(width*.6, height*.4, 450, 400);
+  menuBox = scene.add.rectangle(width*.9, height*.7, 450, 400, 0x333333, 1);
   start = scene.make.text({
     x: width *.65,
     y: height *.4,
@@ -68,33 +66,13 @@ alertText = scene.make.text({
   
   alertText.visible = false;
 
-  timerBox = scene.add.graphics();
-  timerBar = scene.add.graphics();
-  timerBar2 = scene.add.graphics();
-  timerBox.fillStyle(0x111111, 1);
-  timerBox.fillRect(
-    width*.6,
-    height - 40,
-    325,
-    30,
-  );
-  timerBar.fillStyle(0xff4500, 1);
-  timerBar.fillRect(
-    width *.61,
-    height - 35,
-    305,
-    20,
-  );
+  timerBox = scene.add.rectangle(width*.85, height - 40, 320, 30, 0x111111, 1);
+  timerBar = scene.add.rectangle(width *.86, height - 35,305, 20, 0xff4500, 1);
+  timerBar2 = scene.add.rectangle(width, height - 35, 325, 20, 0x111111, 0.8);
+
   timerBox.visible = false;
   timerBar.visible = false;
   timerBar2.visible = false;
-  timerBar2.fillStyle(0x111111, 0.8);
-  timerBar2.fillRect(
-    width,
-    height - 35,
-    325,
-    20,
-  );
 }
 
 function drawCountry(scene,country) {
@@ -248,7 +226,9 @@ if(!startGame || region.countries==null)
     if(roundStarted)
 {
    if(!wait){
-      timerBar2.x--;
+    //timerBar2.setDepth(1);
+    
+    timerBar2.x--;
       timerCount--;
       if(timerCount==0){
         roundStarted=false;
