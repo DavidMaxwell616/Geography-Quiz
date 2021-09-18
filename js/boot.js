@@ -27,7 +27,7 @@ let countryImages;
 let countryText;
 let randCountry;
 let currentCountry;
-const TIMER_COUNT = 320;
+const TIMER_COUNT = 300;
 let timerCount = TIMER_COUNT;
 
 const countryArray = [1,

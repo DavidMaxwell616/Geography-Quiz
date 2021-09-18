@@ -66,13 +66,11 @@ alertText = scene.make.text({
   
   alertText.visible = false;
 
-  timerBox = scene.add.rectangle(width*.85, height - 40, 320, 30, 0x111111, 1);
-  timerBar = scene.add.rectangle(width *.86, height - 35,305, 20, 0xff4500, 1);
-  timerBar2 = scene.add.rectangle(width, height - 35, 325, 20, 0x111111, 0.8);
-
+  timerBox = scene.add.rectangle(width*.81, height - 40, 300, 30, 0x111111, 1);
+  timerBar = scene.add.rectangle(width *.82, height - 39,300, 20, 0xff4500, 1);
+ 
   timerBox.visible = false;
   timerBar.visible = false;
-  timerBar2.visible = false;
 }
 
 function drawCountry(scene,country) {
@@ -103,7 +101,6 @@ function showMenu(onOff){
   start.visible = onOff;
   menuText.visible = onOff;
   timerBar.visible = onOff;
-  timerBar2.visible = onOff;
   timerBox.visible = onOff;
 }
 
@@ -122,7 +119,6 @@ function onObjectClicked(pointer, gameObject) {
     start.setFont('44px IMPACT');
     timerBox.visible = true;
     timerBar.visible = true;
-    timerBar2.visible = true;
     roundStarted = true;
   } else 
   {
@@ -150,9 +146,8 @@ function correctAnswer() {
       region.score+=timerCount;
       currentCountry = getCountry();
       roundStarted = true;
-      timerBar2.x = width;
+      timerBar.width = timerCount = TIMER_COUNT;
       menuText.setText(getMenuText());
-      timerCount = TIMER_COUNT;
       wait = false;
     },
     callbackScope: _scene,
@@ -171,9 +166,8 @@ function wrongAnswer(game) {
       alertText.visible = false;
       currentCountry = getCountry();
       roundStarted = true;
-      timerBar2.x = width;
       menuText.setText(getMenuText());
-      timerCount = TIMER_COUNT;
+      timerBar.width = timerCount = TIMER_COUNT;
       wait = false;
     },
     callbackScope: game.scene,
@@ -190,7 +184,7 @@ function timeOut(game) {
     callback: callback => {
       currentCountry = getCountry();
       roundStarted = true;
-      timerBar2.x = width;
+      timerBar.width = timerCount = TIMER_COUNT;
       menuText.setText(getMenuText());
       timerCount = TIMER_COUNT;
       wait = false;
@@ -228,9 +222,9 @@ if(!startGame || region.countries==null)
    if(!wait){
     //timerBar2.setDepth(1);
     
-    timerBar2.x--;
+    timerBar.width--;
       timerCount--;
-      if(timerCount==0){
+      if(timerBar.width==0){
         roundStarted=false;
         lives--;
         timeOut(this);
