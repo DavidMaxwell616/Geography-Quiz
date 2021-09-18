@@ -21,6 +21,8 @@ let cty;
 let menuShowing;
 let regions=[];
 const orange = '#FFA500';
+const green = '#00A500';
+const darkGrey = '#333333';
 let selectedRegion;
 let menuBox;
 let countryImages;
@@ -29,6 +31,11 @@ let randCountry;
 let currentCountry;
 const TIMER_COUNT = 300;
 let timerCount = TIMER_COUNT;
+let highScoreText;
+let scoreText;
+let highScore = 0;
+let score = 0;
+let localStorageName = "GeographyQuiz";
 
 const countryArray = [1,
 10,

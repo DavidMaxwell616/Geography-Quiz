@@ -102,6 +102,22 @@ function showMenu(onOff){
   menuText.visible = onOff;
   timerBar.visible = onOff;
   timerBox.visible = onOff;
+  worldImage.visible = onOff;
+  splashBox.visible = !onOff;
+  menuTitle.visible = !onOff;
+  if(!onOff)
+    {
+      score = regions.reduce((n, {score}) => n + score, 0);
+      updateStatsMenu();
+    if(score>highScore){
+    highScore = score;
+    localStorage.setItem(localStorageName, highScore);
+    highScoreText.visible = !onOff;
+    scoreText.visible = !onOff;
+    highScoreText.setText("High Score:" + highScore);;
+    scoreText.setText("Total Score:" + score);;
+   }
+    }
 }
 
 function onObjectClicked(pointer, gameObject) {
@@ -144,6 +160,12 @@ function correctAnswer() {
       region.countries[index].solved = true;
       region.correctAnswers++;
       region.score+=timerCount;
+      if(region.countries.filter(x=> !x.solved).length==0)
+        {
+          showMenu(false);
+          startGame=false;
+          return;
+        }
       currentCountry = getCountry();
       roundStarted = true;
       timerBar.width = timerCount = TIMER_COUNT;
