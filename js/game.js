@@ -109,13 +109,13 @@ function showMenu(onOff){
     {
       score = regions.reduce((n, {score}) => n + score, 0);
       updateStatsMenu();
-    if(score>highScore){
+      highScoreText.visible = !onOff;
+      scoreText.visible = !onOff;
+        highScoreText.setText("High Score:" + highScore);
+      scoreText.setText("Total Score:" + score);
+      if(score>highScore){
     highScore = score;
     localStorage.setItem(localStorageName, highScore);
-    highScoreText.visible = !onOff;
-    scoreText.visible = !onOff;
-    highScoreText.setText("High Score:" + highScore);;
-    scoreText.setText("Total Score:" + score);;
    }
     }
 }

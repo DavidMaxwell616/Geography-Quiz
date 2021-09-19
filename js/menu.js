@@ -29,13 +29,13 @@ regionData.forEach(region => {
 
 updateStatsMenu();
 highScoreText = scene.add.text(config.width*.2, 500, "High Score:" + highScore, { font: "32px Impact", fill: orange});
-scoreText = scene.add.text(config.width*.5,500, "Total Score:" + score, { font: "32px Impact", fill: orange});
+scoreText = scene.add.text(config.width*.55,500, "Total Score:" + score, { font: "32px Impact", fill: orange});
 
 }
 
 function updateStatsMenu(){
   var textY = 0;  
-regions.forEach(region => {
+  regions.forEach(region => {
   var regionText = region.region;
   var percent = (region.correctAnswers / region.countries.length * 100);
   var regionText2 = region.countryCount + ' countries, '+
