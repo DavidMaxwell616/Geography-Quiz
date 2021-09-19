@@ -101,32 +101,32 @@
     "key": 244,
     "name": "Venezuela",
     "region": "South America",
-    "x": 222,
+    "x": 221,
     "y": 143
   }, {
     "key": 242,
     "name": "Colombia",
     "region": "South America",
-    "x": 179,
+    "x": 178,
     "y": 154
   }, {
     "key": 246,
     "name": "Guyana",
     "region": "South America",
-    "x": 275,
-    "y": 153
+    "x": 274,
+    "y": 151
   }, {
     "key": 248,
     "name": "Suriname",
     "region": "South America",
-    "x": 288,
+    "x": 293,
     "y": 154
   }, {
     "key": 250,
     "name": "French Guyana",
     "region": "South America",
-    "x": 315,
-    "y": 158
+    "x": 314,
+    "y": 156
   }, {
     "key": 186,
     "name": "Brazil",
@@ -137,8 +137,8 @@
     "key": 256,
     "name": "Bolivia",
     "region": "South America",
-    "x": 245 ,
-    "y": 293
+    "x": 244 ,
+    "y": 292
   }, {
     "key": 262,
     "name": "Argentina",
@@ -149,13 +149,13 @@
     "key": 254,
     "name": "Peru",
     "region": "South America",
-    "x": 167 ,
+    "x": 165 ,
     "y": 245
   }, {
     "key": 264,
     "name": "Uraguay",
     "region": "South America",
-    "x": 295 ,
+    "x": 296 ,
     "y": 405
   }, {
     "key": 258,
@@ -173,7 +173,7 @@
     "key": 252,
     "name": "Ecuador",
     "region": "South America",
-    "x": 142 ,
+    "x": 144 ,
     "y": 194
   }, {
     "key": 236,
