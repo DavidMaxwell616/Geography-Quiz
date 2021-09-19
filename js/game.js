@@ -97,7 +97,7 @@ function drawWorld(scene) {
 }
 
 function showMenu(onOff){
-   menuBox.visible = onOff;
+  menuBox.visible = onOff;
   start.visible = onOff;
   menuText.visible = onOff;
   timerBar.visible = onOff;
@@ -111,19 +111,21 @@ function showMenu(onOff){
       updateStatsMenu();
       highScoreText.visible = !onOff;
       scoreText.visible = !onOff;
-        highScoreText.setText("High Score:" + highScore);
+      highScoreText.setText("High Score:" + highScore);
       scoreText.setText("Total Score:" + score);
-      if(score>highScore){
-    highScore = score;
-    localStorage.setItem(localStorageName, highScore);
-   }
+    if(score>highScore){
+      highScore = score;
+      localStorage.setItem(localStorageName, highScore);
+      }
     }
 }
 
 function onObjectClicked(pointer, gameObject) {
   if(!startGame) {
-  selectedRegion = gameObject.text;
-  StartGame(); 
+     selectedRegion = gameObject.text;
+   var region = regions.filter(word => word.region == selectedRegion)[0];
+   if(!region.solved)
+    StartGame(); 
   }
   else
   {
@@ -164,6 +166,7 @@ function correctAnswer() {
         {
           showMenu(false);
           startGame=false;
+          region.solved = true;
           return;
         }
       currentCountry = getCountry();
@@ -178,27 +181,10 @@ function correctAnswer() {
   wait = true;
 }
 
-function wrongAnswer(game) {
-  alertText.visible = true;
-  alertText.setText('INCORRECT!');
-  alertText.setDepth(1);
-  _scene.time.addEvent({
-    delay: 2000, // ms
-    callback: callback => {
-      alertText.visible = false;
-      currentCountry = getCountry();
-      roundStarted = true;
-      menuText.setText(getMenuText());
-      timerBar.width = timerCount = TIMER_COUNT;
-      wait = false;
-    },
-    callbackScope: game.scene,
-    loop: false,
-  });
-}
-
 function timeOut(game) {
   alertText.visible = true;
+  roundStarted=false;
+  lives--;
   alertText.setText('TIME OUT!');
   alertText.setDepth(1);
   _scene.time.addEvent({
@@ -208,9 +194,15 @@ function timeOut(game) {
       roundStarted = true;
       timerBar.width = timerCount = TIMER_COUNT;
       menuText.setText(getMenuText());
-      timerCount = TIMER_COUNT;
       wait = false;
       alertText.visible = false;
+      if(lives==0)
+      {
+        lives=3;
+        showMenu(false);
+        startGame=false;
+        return;
+      }
     },
     callbackScope: game.scene,
     loop: false,
@@ -247,8 +239,6 @@ if(!startGame || region.countries==null)
     timerBar.width--;
       timerCount--;
       if(timerBar.width==0){
-        roundStarted=false;
-        lives--;
         timeOut(this);
       }
   

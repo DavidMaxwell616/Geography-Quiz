@@ -18,6 +18,7 @@ regionData.forEach(region => {
     });
   region.countryCount = region.countries.length;
   region.correctAnswers = 0;
+  region.solved = false;
   region.score = 0;
   regions.push(region);
 });
