@@ -110,6 +110,8 @@ function showMenu(onOff){
       score = regions.reduce((n, {score}) => n + score, 0);
       updateStatsMenu();
       highScoreText.visible = !onOff;
+     countryImages.clear(true, true);
+
       scoreText.visible = !onOff;
       highScoreText.setText("High Score:" + highScore);
       scoreText.setText("Total Score:" + score);
@@ -210,7 +212,8 @@ function timeOut(game) {
 }
 
 function getMenuText(){
- var percent = (region.correctAnswers / region.countries.length * 100);
+ var percent = region.correctAnswers / region.countries.length * 100;
+ percent = Math.round(percent);
  currentCountry = getCountry();
   return 'Find: ' +
   currentCountry +
@@ -232,7 +235,7 @@ if(!startGame || region.countries==null)
   if(lives==0)
   startGame = false;
     if(roundStarted)
-{
+  {
    if(!wait){
     //timerBar2.setDepth(1);
     

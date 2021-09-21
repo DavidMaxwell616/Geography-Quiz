@@ -38,8 +38,9 @@ function updateStatsMenu(){
   var textY = 0;  
   regions.forEach(region => {
   var regionText = region.region;
-  var percent = (region.correctAnswers / region.countries.length * 100);
-  var regionText2 = region.countryCount + ' countries, '+
+  var percent = region.correctAnswers / region.countries.length * 100;
+  percent = Math.round(percent);
+   var regionText2 = region.countryCount + ' countries, '+
                   percent + '% solved, score: '+
                   region.score;
       var text = scene.add.text(config.width*.22, 200+(textY*40), regionText, { font: "18px Arial", fill: percent==100 ? green : orange});
